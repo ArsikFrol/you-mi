@@ -1,4 +1,5 @@
 
+import usePsychologists from '@/store/psychologists/psychologistsStore'
 import { TActiveAcquaint } from './SliderPsychologist'
 import Btn from './UI/Btn'
 
@@ -16,13 +17,13 @@ export default function Acquaint(props: Props) {
     const {
         listPsychologist,
         activePsychologist
-    } = useFormSelect()
+    } = usePsychologists()
 
     return (
         <div className='mt-[100px]'>
             <Container purple rounded >
                 <div className='px-[50px]'>
-                    <div className='grid grid-cols-4 text-center text-[18px] text-(--text)font-medium 
+                    <div className='grid grid-cols-4 text-center text-[18px] text-(--text)font-medium
                                             justify-between mb-[50px]'>
                         <div onClick={() => props.setActiveAcquaint('aboutMe')}
                             style={{
