@@ -1,14 +1,17 @@
 import Image from 'next/image'
 
-import { TListPsychologist } from '@/store/formSelection/type'
-import useFormSelect from '@/store/formSelection/formSelectionStore'
+import { TListPsychologist } from '@/store/psychologists/types'
+import usePsychologists from '@/store/psychologists/psychologistsStore'
 
 type Props = {
     favoritePsychologists: TListPsychologist[]
 }
 
 export default function FavoritePsychologists(props: Props) {
-    const { setActivePsychologist } = useFormSelect()
+
+    const {
+        setActivePsychologist
+    } = usePsychologists()
 
     const clickPsychologist = (id: number) => {
         setActivePsychologist(id)
