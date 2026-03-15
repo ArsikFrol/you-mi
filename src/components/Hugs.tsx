@@ -23,8 +23,8 @@ export default function Hugs() {
                     transition={{ duration: 0.7, type: "spring", stiffness: 50 }}
                     className="max-lg:mx-auto">
                     <div className='text-(--color-btn-and-title) font-extrabold text-[44px]
-                        max-md:text-center
-                        max-md:text-[35px]
+                        max-lg:text-center
+                        max-md:text-center max-md:text-[35px]
                         max-xs:text-[30px]'>
                         Вместе мы справимся
                     </div>
