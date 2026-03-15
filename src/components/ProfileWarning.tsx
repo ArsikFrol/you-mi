@@ -66,12 +66,12 @@ export default function ProfileWarning(props: Props) {
 
     const clickTopUpYourAccountZeroBalance = () => {
         router.push('/payService?backPage=profile')
-        setCountPay(2800)
+        setCountPay(String(2800))
     }
 
     const clickTopUpYourAccount = () => {
         router.push('/payService?backPage=profile')
-        setCountPay(countPay)
+        setCountPay(String(countPay))
     }
 
     return (

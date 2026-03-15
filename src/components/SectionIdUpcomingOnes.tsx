@@ -63,7 +63,7 @@ export default function SectionIdUpcomingOnes() {
     }
 
     const clickLeftEnoughMoney = () => {
-        setCountPay(listUpcomingOnes[idElem].price - youHaveBalance)
+        setCountPay(String(listUpcomingOnes[idElem].price - youHaveBalance))
         router.push(`/payService?backPage=webinarsTimetable&idElem=${idElem}`)
     }
 
@@ -82,7 +82,7 @@ export default function SectionIdUpcomingOnes() {
                 {listUpcomingOnes[idElem].price ?
                     <div className='flex items-center gap-x-[30px] mt-[30px] mb-[20px]'>
                         <div className='text-(--text) text-[20px] font-medium'>Вебинар стоит:</div>
-                        <div className='w-[170px] h-[50px] leading-[50px] text-center rounded-2xl 
+                        <div className='w-[170px] h-[50px] leading-[50px] text-center rounded-2xl
                         text-[20px] text-white bg-(--color-btn-and-title)'>
                             {formatNumberWithSpaceFromRight(listUpcomingOnes[idElem].price)} ₽
                         </div>
@@ -118,7 +118,7 @@ export default function SectionIdUpcomingOnes() {
             {enoughMoney &&
                 <WarningWindow leftClick={clickLeftEnoughMoney} rightClick={setEnoughMoney}
                     setShowWarning={setEnoughMoney} showWarning={enoughMoney}
-                    text={`Цена регистрации ${listUpcomingOnes[idElem].price}. 
+                    text={`Цена регистрации ${listUpcomingOnes[idElem].price}.
                         У вас на балансе не хватает денег. Пополните баланс на ${listUpcomingOnes[idElem].price - youHaveBalance}?`} />
             }
         </div>

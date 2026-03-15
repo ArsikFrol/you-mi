@@ -58,7 +58,7 @@ export default function FormLayout({
         allFieldsFilledOne,
         allFieldsFilledTwo,
         selectData,
-        allFieldsFilledPayService, setAllFieldsFilledPayService,
+        allFieldsFilledPayService,
         rememberUser,
         clearAllFields
     } = useFormSelect()
@@ -71,7 +71,6 @@ export default function FormLayout({
     } = useTariffs()
 
     const {
-        addWebinarEntries,
         payElemWebinarEntries
     } = useProfile()
 
@@ -110,7 +109,7 @@ export default function FormLayout({
                 desc: `Покупка ${countSession === 1 ? '1 сессии' : `${countSession} сессий`}`,
                 price: countPay
             })
-            setCountPay(0)
+            setCountPay('0')
         } if (backPage === 'formPsychologists') {
             if (allFieldsFilledOne && allFieldsFilledTwo && selectData && allFieldsFilledPayService) {
 
@@ -123,7 +122,7 @@ export default function FormLayout({
                 desc: 'Оплата 1 сессии у психолога',
                 price: countPay
             })
-            setCountPay(0)
+            setCountPay('0')
         } if (backPage === 'webinarsTimetable' && allFieldsFilledPayService) {
             toast.success('Записали вас)')
             router.push('/webinarsTimetable')
@@ -135,7 +134,7 @@ export default function FormLayout({
                 price: listUpcomingOnes[idElemWebinarsTimetable].price
             })
             setYouHaveBalance(0)
-            setCountPay(0)
+            setCountPay('0')
         } if (backPage === 'profile' && allFieldsFilledPayService) {
             router.push('/profile')
             toast.success('Оплата прошла успешно!')
@@ -146,7 +145,7 @@ export default function FormLayout({
                 desc: 'Покупка 1 сессии',
                 price: countPay
             })
-            setCountPay(0)
+            setCountPay('0')
         } if (!rememberUser) clearAllFields()
     }
 
@@ -164,8 +163,8 @@ export default function FormLayout({
                             return (
                                 <Link key={obj.id} style={{ width: `${obj.width}px` }}
                                     href={obj.id === 4 ? '/payService' : '/formSelectionPsychologist/' + obj.link}
-                                    className='block text-center h-[50px] leading-[50px] text-white text-[20px] 
-                                    font-semibold bg-(--color-btn-and-title) rounded-3xl transition-all 
+                                    className='block text-center h-[50px] leading-[50px] text-white text-[20px]
+                                    font-semibold bg-(--color-btn-and-title) rounded-3xl transition-all
                                     duration-300 cursor-pointer hover:scale-105 opacity-100'>
                                     {obj.text}
                                 </Link>
@@ -178,8 +177,8 @@ export default function FormLayout({
                 {children}
             </>
             <div className='flex gap-x-[50px] items-center w-[500px] mx-auto mt-[50px]'>
-                <div onClick={clickBack} className='transition-transform hover:scale-105 
-                    duration-300 cursor-pointer w-[220px] border border-(--color-btn-and-title) h-[60px] leading-[60px] 
+                <div onClick={clickBack} className='transition-transform hover:scale-105
+                    duration-300 cursor-pointer w-[220px] border border-(--color-btn-and-title) h-[60px] leading-[60px]
                     text-center rounded-2xl'>Назад</div>
                 <div className='w-[230px]' onClick={payToast}>
                     <Btn textBtn='Оплатить' widht={220} />

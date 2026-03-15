@@ -11,7 +11,6 @@ import Container from "@/components/UI/Container";
 
 import useProfile from "@/store/profile/profileStore";
 
-import SectionIdUpcomingOnes from "@/components/SectionIdUpcomingOnes";
 import useTariffs from '@/store/tariffs/tariffs';
 import WarningWindow from '@/components/UI/WarningWindow';
 
@@ -37,7 +36,7 @@ export default function webinarsTimetable() {
         if (youHaveBalance < webinarEntries[id - 1].price) {
             setIdElem(id)
             setShowWarningLessMoney(true)
-            setCountPay(webinarEntries[id - 1].price)
+            setCountPay(String(webinarEntries[id - 1].price))
         } if (youHaveBalance >= webinarEntries[id - 1].price) {
             setShowWarningMoreMoney(true)
         }
@@ -46,7 +45,7 @@ export default function webinarsTimetable() {
 
     const clickLeftMoreMoney = () => {
         setYouHaveBalance(youHaveBalance - countPay)
-        setCountPay(0)
+        setCountPay('0')
         payElemWebinarEntries(idElem, true)
     }
 
