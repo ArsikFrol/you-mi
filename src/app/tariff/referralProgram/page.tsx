@@ -29,7 +29,7 @@ export default function () {
     return (
         <Container>
             <>
-                <ReferralProgram paddingNoneYrelative insidePadding purple rounded />
+                <ReferralProgram paddingNone relative insidePadding purple rounded />
                 <div className='flex justify-between'>
                     <div className='flex flex-col gap-y-[20px] mt-[50px]'>
                         <div className='text-(--color-btn-and-title) text-[18px] font-medium'>Ваша ссылка</div>

@@ -54,7 +54,7 @@ export default function FormLayout({
     }
 
     return (
-        <Container paddingNoneYminH={pathName === '/formPartTeam/two' ? true : false}>
+        <Container paddingNoneY minH={pathName === '/formPartTeam/two' ? true : false}>
             <>
                 <div className='' style={pathName === '/formPartTeam/complete' ? {
                     padding: '25px 0',
