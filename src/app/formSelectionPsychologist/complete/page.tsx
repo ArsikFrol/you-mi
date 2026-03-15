@@ -10,6 +10,7 @@ import calendar from '../../../../public/profile/calendar.png'
 import useCalendar from "@/store/calendar/calendarStore"
 import useFormSelect from "@/store/formSelection/formSelectionStore"
 import useTariffs from "@/store/tariffs/tariffs"
+import usePsychologists from "@/store/psychologists/psychologistsStore"
 
 export default function () {
     const route = useRouter()
@@ -21,13 +22,13 @@ export default function () {
     } = useCalendar()
 
     const {
-        listPsychologist,
-        activePsychologist
-    } = useFormSelect()
-
-    const {
         tariffPsychologist
     } = useTariffs()
+
+    const {
+        activePsychologist,
+        listPsychologist
+    } = usePsychologists()
 
     return (
         <>
