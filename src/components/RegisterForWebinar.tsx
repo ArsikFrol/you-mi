@@ -39,9 +39,8 @@ export default function RegisterForWebinar(props: Props) {
         emailForWebinar, setEmailForWebinar,
         surnameForWebinar, setSurnameForWebinar,
         agreeWithRules, setAgreeWithRules,
-        name,
         email,
-        surname
+        FIO,
     } = useProfile()
 
     const clickSignUp = () => {
@@ -70,8 +69,8 @@ export default function RegisterForWebinar(props: Props) {
     }
 
     const clickAllData = () => {
-        setNameForWebinar(name)
-        setSurnameForWebinar(surname)
+        setNameForWebinar(FIO.split(' ')[0])
+        setSurnameForWebinar(FIO.split(' ')[1])
         setEmailForWebinar(email)
     }
 
@@ -106,16 +105,16 @@ export default function RegisterForWebinar(props: Props) {
                 Вставить данные из профиля
             </div>
             <div className=''>
-                <div className="select-none hover:scale-102 transition-transform duration-300 flex gap-x-[30px] 
+                <div className="select-none hover:scale-102 transition-transform duration-300 flex gap-x-[30px]
                                             items-center">
                     <div className="relative">
-                        <input className=" w-[30px] h-[30px]  border-(--color-btn-and-title) border-2 
-                                                  checked:bg-blue-500  focus:outline-none  cursor-pointer  
+                        <input className=" w-[30px] h-[30px]  border-(--color-btn-and-title) border-2
+                                                  checked:bg-blue-500  focus:outline-none  cursor-pointer
                                                     rounded-[5px]  appearance-none peer" id='agree' type="checkbox"
                             checked={agreeWithRules} onChange={() => setAgreeWithRules(!agreeWithRules)} />
                         <svg
-                            className=" absolute top-[14px] left-1/2 -translate-x-1/2 
-                                                        -translate-y-1/2 w-5 h-5 text-white opacity-0 peer-checked:opacity-100 
+                            className=" absolute top-[14px] left-1/2 -translate-x-1/2
+                                                        -translate-y-1/2 w-5 h-5 text-white opacity-0 peer-checked:opacity-100
                                                         pointer-events-none transition-opacity duration-200"
                             fill="none"
                             stroke="currentColor"
