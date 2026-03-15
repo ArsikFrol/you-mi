@@ -25,7 +25,7 @@ export default function pageFreeTimePsychologist() {
 
     return (
         <>
-            <Header white notShowNav />
+            <Header white showNav />
             <div className='text-(--color-btn-and-title) relative
                 text-[40px] font-extrabold w-[1070px] mx-auto mb-[100px] mt-[50px]'>
                 <div className=''>Укажите дни и время, когда вы готовы проводить сессии</div>
