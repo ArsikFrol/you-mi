@@ -54,7 +54,7 @@ export default function FormLayout({
     }
 
     return (
-        <Container paddingNone minH={pathName === '/formPartTeam/two' ? true : false}>
+        <Container paddingNoneYminH={pathName === '/formPartTeam/two' ? true : false}>
             <>
                 <div className='' style={pathName === '/formPartTeam/complete' ? {
                     padding: '25px 0',
@@ -75,8 +75,8 @@ export default function FormLayout({
                     <div style={{
                         ...(pathName == '/formPartTeam/one' ? { display: 'none' } : {})
                     }}
-                        onClick={clickBack} className='transition-transform hover:scale-105 
-                    duration-300 cursor-pointer w-[220px] border border-(--color-btn-and-title) h-[60px] leading-[60px] 
+                        onClick={clickBack} className='transition-transform hover:scale-105
+                    duration-300 cursor-pointer w-[220px] border border-(--color-btn-and-title) h-[60px] leading-[60px]
                     text-center rounded-2xl'>Назад</div>
                     <div style={
                         pathName === '/formPartTeam/five' ? { display: 'none' } : {}

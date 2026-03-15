@@ -29,12 +29,12 @@ export default function () {
     return (
         <Container>
             <>
-                <ReferralProgram paddingNone relative insidePadding purple rounded />
+                <ReferralProgram paddingNoneYrelative insidePadding purple rounded />
                 <div className='flex justify-between'>
                     <div className='flex flex-col gap-y-[20px] mt-[50px]'>
                         <div className='text-(--color-btn-and-title) text-[18px] font-medium'>Ваша ссылка</div>
-                        <div className='text-[rgba(120,114,185,0.5)] text-[16px] 
-                                border border-(--color-btn-and-title) rounded-2xl 
+                        <div className='text-[rgba(120,114,185,0.5)] text-[16px]
+                                border border-(--color-btn-and-title) rounded-2xl
                                 w-[730px] h-[50px] leading-[50px] px-[30px]'>
                             https://youmi/signup/therapist/3BR8Fpp4
                         </div>
@@ -45,14 +45,14 @@ export default function () {
                 </div>
                 <div className='flex gap-x-[20px] items-center mt-[30px]'>
                     <div className='text-(--text) text-[18px] font-medium'>По вашей ссылке прошли первую сессию:</div>
-                    <div className='bg-(--color-btn-and-title) h-[50px] w-[180px] 
+                    <div className='bg-(--color-btn-and-title) h-[50px] w-[180px]
                             text-center leading-[50px] text-white rounded-2xl'>
                         {referralPiple} человек
                     </div>
                 </div>
                 <div className='flex gap-x-[20px] items-center'>
                     <div className='text-(--text) text-[18px] font-medium'>Вам отправили:</div>
-                    <div className='bg-(--color-btn-and-title) h-[50px] w-[180px] text-center 
+                    <div className='bg-(--color-btn-and-title) h-[50px] w-[180px] text-center
                         leading-[50px] text-white rounded-2xl'>
                         {formatNumberWithSpaceFromRight(moneyReferralPiple)} ₽
                     </div>

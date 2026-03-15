@@ -8,7 +8,7 @@ import complet from '../../../../public/complet.png'
 export default function () {
     return (
         <div className='bg-(--bg)'>
-            <Container purple minH paddingNone>
+            <Container purple minH paddingNoneY>
                 <>
                     <div className='flex justify-between items-center mb-[100px]'>
                         <div className=''>

@@ -49,7 +49,7 @@ export default function FormSelectionThree(props: Props) {
                 <SliderPsychologist setActiveAcquaint={setActiveAcquaint}
                     setShowAcquaint={setShowAcquaint} setShowCalendar={setShowCalendar}
                     showCalendar={showCalendar} />
-                <Container purple rounded paddingNone relative>
+                <Container purple rounded paddingNoneYrelative>
                     <CartSelectionThree setShowAcquaint={setShowAcquaint}
                         setShowCalendar={setShowCalendar} showAcquaint={showAcquaint} showCalendar={showCalendar}
                         setShowVisitCard={props.setShowVisitCard} />
