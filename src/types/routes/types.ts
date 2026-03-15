@@ -1,0 +1,40 @@
+export type TRoute =
+    | '/'
+    | '/profile'
+    | '/profilePsychologist'
+    | '/articles'
+    | `/articles/${string}`
+    | `/articles/${'relationships' | 'careerAndFinances' | 'emotions' | 'depressiveState' | 'relationship' | 'careerAndFinance' |
+    'emotion' | 'depressiveStat' | 'relationshi' | 'careerAndFinanc' | 'emotio' | 'depressiveSta'
+    }/${number}`
+    | '/aboutUs'
+    | '/formPartTeam/one'
+    | '/formPartTeam/two'
+    | '/formPartTeam/three'
+    | '/formPartTeam/four'
+    | '/formPartTeam/five'
+    | '/formPartTeam/complete'
+    | '/formSelectionPsychologist/one'
+    | '/formSelectionPsychologist/two'
+    | '/formSelectionPsychologist/three'
+    | '/formSelectionPsychologist/complete'
+    | '/messages'
+    | '/psychologists'
+    | '/signIn'
+    | '/tariff'
+    | '/tariff/history'
+    | '/tariff/referralProgram'
+    | '/tariff/topUpBalance'
+    | '/webinars'
+    | `/webinars/${'upcomingOnes' | 'archive'}/${number}`
+    | '/payService'
+    | '/payService?backPage=formPsychologists'
+    | '/payService?backPage=tariff'
+    | '/payService?backPage=profile'
+    | `/payService?backPage=webinarsTimetable&idElem=${number}`
+    | `/payService?backPage=tariff&countSession=${number}`
+    | '/webinarsTimetable'
+    | '/appStore'
+    | '/mySchedule'
+    | '/choiceFreeTime'
+    | '/scheduleSession'

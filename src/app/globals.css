@@ -1,0 +1,41 @@
+@import "tailwindcss";
+
+@keyframes marquee {
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(-50%);
+    }
+}
+
+@keyframes marquee-reverse {
+    0% {
+        transform: translateX(-50%);
+    }
+
+    100% {
+        transform: translateX(0);
+    }
+}
+
+.animate-marquee {
+    animation: marquee 90s linear infinite;
+    will-change: transform;
+}
+
+.animate-marquee-reverse {
+    animation: marquee-reverse 90s linear infinite;
+    will-change: transform;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+:root {
+    --color-btn-and-title:rgba(140, 130, 210, 1); /* rgba(120, 114, 185, 1) */
+    --bg: rgba(249, 252, 255, 1);
+    --text: rgba(77, 77, 82, 1);
+}
