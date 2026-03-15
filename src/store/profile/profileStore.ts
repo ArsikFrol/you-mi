@@ -1,5 +1,5 @@
 import { create } from "zustand";
-import { IProfile, TGender, TWebinarEntries } from "./types";
+import { IProfile, TGender, TLanguage, TWebinarEntries } from "./types";
 
 import archive from '../../../public/webinars/archive.png'
 import live from '../../../public/webinars/live.png'
@@ -71,6 +71,8 @@ const useProfile = create<IProfile>((set, get) => ({
     setNumberPhone: (newValue: string) => set({ numberPhone: newValue }),
     gender: '',
     setGender: (newValue: TGender) => set({ gender: newValue }),
+    language: '',
+    setLanguage: (newValue: TLanguage) => set({ language: newValue }),
 
     referralPiple: 0,
     setReferralPiple: (newValue: number) => set({ referralPiple: newValue }),

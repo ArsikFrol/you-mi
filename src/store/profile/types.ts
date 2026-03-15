@@ -1,6 +1,9 @@
 import { StaticImageData } from "next/image"
 
 type TImage = StaticImageData | string
+
+export type TLanguage = 'ru' | 'en' | ''
+
 export type TGender = 'муж' | 'жен' | ''
 
 export type TWebinarEntries = {
@@ -29,6 +32,8 @@ export interface IProfile {
     setNumberPhone: (newValue: string) => void,
     gender: TGender,
     setGender: (newValue: TGender) => void,
+    language: TLanguage,
+    setLanguage: (newValue: TLanguage) => void,
 
     referralPiple: number,
     setReferralPiple: (newValue: number) => void,
