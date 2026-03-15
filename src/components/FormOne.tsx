@@ -37,7 +37,7 @@ export default function FormOne() {
     }, [FIO, gender, dayBirth, monthBirth, yearBirth, citizenship, country, numberPhone, email, socialNetwork])
 
     return (
-        <Container paddingNone>
+        <Container paddingNoneY>
             <>
                 <div className='relative w-[780px] mx-auto'>
                     <Title text='Станьте частью команды YouMi' />
@@ -60,7 +60,7 @@ export default function FormOne() {
                     </div>
                     <div className=''>
                         <div className='text-(--text) text-[16px] font-medium mb-[10px]'>Пол</div>
-                        <div className='flex text-(--text) text-[16px] border-2 
+                        <div className='flex text-(--text) text-[16px] border-2
                             border-(--color-btn-and-title) rounded-2xl h-[50px] w-[180px]'>
                             <div onClick={() => setGender('муж')} style={{
                                 ...(gender === 'муж' ? {
@@ -117,7 +117,7 @@ export default function FormOne() {
                     </div>
                     <div className=''>
                         <div className='text-(--text) text-[16px] font-medium mb-[10px]'>Социальные сети</div>
-                        <textarea value={socialNetwork} onChange={(e) => setSocialNetwork(e.target.value)} rows={1} className='p-[10px] w-[580px] h-[100px] 
+                        <textarea value={socialNetwork} onChange={(e) => setSocialNetwork(e.target.value)} rows={1} className='p-[10px] w-[580px] h-[100px]
                             border-2 border-(--color-btn-and-title) outline-none rounded-2xl'>
                         </textarea>
                     </div>

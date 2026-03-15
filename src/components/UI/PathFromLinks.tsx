@@ -23,7 +23,7 @@ type Props = {
 
 export default function PathFromLinks(props: Props) {
     return (
-        <Container paddingNone>
+        <Container paddingNoneY>
             <div className='flex items-center justify-between h-[50px]'>
                 <div className='flex items-center gap-x-[20px] text-(--text) text-[24px] font-semibold'>
                     <Link href={`http://localhost:3000/${props.backTwo || ''}`}

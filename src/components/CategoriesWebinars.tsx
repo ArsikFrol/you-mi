@@ -22,7 +22,7 @@ export default function CategoriesWebinars(props: Props) {
     } = useWebinars()
 
     return (
-        <Container paddingNone>
+        <Container paddingNoneY>
             <div className='grid grid-cols-3 justify-between gap-x-[50px] gap-y-[50px] mb-[100px]'>
                 {activeBtn === 'archive' &&
                     props.listArchive.map((obj: TListArchive, index: number) => {

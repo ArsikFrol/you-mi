@@ -36,7 +36,7 @@ export default function () {
     }, [numberCard, validUntil, CVV, cardHolder])
 
     return (
-        <Container paddingNone>
+        <Container paddingNoneY>
             <>
                 <div className='w-[1000px] mx-auto flex items-center justify-between py-[50px]'>
                     <div className=''>
@@ -59,15 +59,15 @@ export default function () {
                             Сумма для оплаты: <span className="text-[28px]">{countPay} ₽</span>
                         </div>
                         <div className='mt-[40px] flex items-center'>
-                            <div className="select-none hover:scale-102 transition-transform duration-300 flex gap-x-[10px] 
+                            <div className="select-none hover:scale-102 transition-transform duration-300 flex gap-x-[10px]
                                 items-center">
                                 <div className="relative w-[30px] h-[30px]">
-                                    <input className="w-[30px] h-[30px] border-(--color-btn-and-title) border-2 
-                                      checked:bg-blue-500  focus:outline-none  cursor-pointer  
+                                    <input className="w-[30px] h-[30px] border-(--color-btn-and-title) border-2
+                                      checked:bg-blue-500  focus:outline-none  cursor-pointer
                                         rounded-[5px]  appearance-none peer" id={'remember'} type="checkbox"
                                         checked={rememberUser} onChange={() => setRememberUser(!rememberUser)} />
-                                    <svg className=" absolute top-[15px] left-1/2 -translate-x-1/2 
-                                            -translate-y-1/2 w-[30px] h-[30px] text-white opacity-0 peer-checked:opacity-100 
+                                    <svg className=" absolute top-[15px] left-1/2 -translate-x-1/2
+                                            -translate-y-1/2 w-[30px] h-[30px] text-white opacity-0 peer-checked:opacity-100
                                             pointer-events-none transition-opacity duration-200"
                                         fill="none"
                                         stroke="currentColor"
