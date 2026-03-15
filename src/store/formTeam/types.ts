@@ -1,4 +1,4 @@
-import { TListQuestions } from "../formSelection/type"
+import { TListQuestions } from "../psychologists/types";
 
 export type TTherapy = 'да' | 'нет' | 'Планирую начать' | 'Не проходил и не планирую' | ''
 export type TCompletedHigher = 'да' | 'нет' | 'Нахожусь в процессе получения ВО' | ''
