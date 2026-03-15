@@ -12,7 +12,7 @@ export default function TariffLayout({
 }>) {
     return (
         <>
-            <Header notShowNav white />
+            <Header showNav white />
             {children}
         </>
     );
