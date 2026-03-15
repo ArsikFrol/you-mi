@@ -1,7 +1,7 @@
 import { create } from "zustand";
 
-import { IFormTeam, TCompletedHigher, TTherapy, TYesOrNo } from "./types";
-import { TListQuestions } from "../formSelection/type";
+import { IFormTeam, TCompletedHigher, TTherapy, TYesOrNo } from "./types"
+import { TListQuestions } from "../psychologists/types";
 
 const listQuestions: Array<TListQuestions> = [
     { id: 1, checked: false, text: 'Гештальт-терапия' },
