@@ -18,7 +18,7 @@ export default function SignUpPage() {
 
     const {
         setEmail,
-        setName
+        FIO, setFIO,
     } = useProfile()
 
     async function handleSubmit(e: React.FormEvent<HTMLFormElement>) {
@@ -45,7 +45,7 @@ export default function SignUpPage() {
             setError(err.message || 'Ошибка регистрации')
         } finally {
             setLoading(false)
-            setName(nameUse)
+            setFIO(nameUse.split(' ')[0])
             setEmail(emailUse)
         }
     }
