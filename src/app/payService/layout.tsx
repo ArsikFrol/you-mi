@@ -1,5 +1,6 @@
 'use client';
 
+import { Suspense } from 'react';
 import { useRouter } from 'next/navigation';
 import { useSearchParams } from 'next/navigation'
 import Link from "next/link";
@@ -41,12 +42,7 @@ const listPage: TListPage[] = [
     { id: 4, link: 'payService', width: 310, text: 'Оплата' }
 ]
 
-export default function FormLayout({
-    children,
-}: {
-    children: React.ReactNode;
-}) {
-
+function FormLayoutContent({ children }: { children: React.ReactNode }) {
     const router = useRouter()
     const searchParams = useSearchParams()
 
@@ -203,4 +199,13 @@ export default function FormLayout({
             }
         </>
     );
+}
+
+// Основной экспорт - оборачиваем в Suspense
+export default function FormLayout({ children }: { children: React.ReactNode }) {
+    return (
+        <Suspense fallback={<div className="text-center py-10">Загрузка...</div>}>
+            <FormLayoutContent>{children}</FormLayoutContent>
+        </Suspense>
+    )
 }

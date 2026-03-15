@@ -2,7 +2,6 @@
 
 import Image from "next/image";
 import React from "react";
-import { useSearchParams } from "next/navigation";
 
 import Container from "@/components/UI/Container";
 import Input from "@/components/UI/Input";
