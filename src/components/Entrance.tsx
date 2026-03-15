@@ -5,6 +5,7 @@ import Link from "next/link"
 import { signIn } from "next-auth/react"
 import { useRouter, useSearchParams } from "next/navigation"
 import type { FormEventHandler } from "react"
+import { Suspense } from "react"
 
 import Container from "./UI/Container"
 import Input from "./UI/Input"
@@ -13,19 +14,18 @@ import useProfile from "@/store/profile/profileStore"
 
 import entrance from '../../public/entrance.png'
 import google from '../../public/entrance/google.png'
-import discord from '../../public/entrance/discord.png'
 import github from '../../public/entrance/github.png'
 import bg from '../../public/bgBtn.png'
 import toast from "react-hot-toast"
 
-export default function Entrance() {
+function EntranceContent() {
     const {
         email, setEmail,
         password, setPassword,
     } = useProfile()
 
-    const serchParams = useSearchParams()
-    const callbackUrl = serchParams.get('callbackUrl') || '/profile'
+    const searchParams = useSearchParams()
+    const callbackUrl = searchParams.get('callbackUrl') || '/profile'
 
     const router = useRouter()
 
@@ -70,22 +70,30 @@ export default function Entrance() {
                         <Input maxLength={100} onChange={setPassword} value={password} name='password'
                             placeholder="password" width={380} height={50} />
                         <button className='relative group block w-[380px]'>
-                            <div className='w-[380px] relative z-10 cursor-pointer rounded-2xl 
+                            <div className='w-[380px] relative z-10 cursor-pointer rounded-2xl
                                 bg-(--color-btn-and-title) text-white text-[20px] font-bold text-center leading-[70px]'>Войти</div>
-                            <Image style={{ height: '70px' }} className='absolute top-2.5 left-2.5 transition-transform 
+                            <Image style={{ height: '70px' }} className='absolute top-2.5 left-2.5 transition-transform
                                 group-hover:translate-[-5px]' src={bg} alt='' width={380} />
                         </button>
                     </form>
-                    <Link href='/signUp' className="block hover:scale-105 transition-transform duration-300 w-[200px] cursor-pointer 
+                    <Link href='/signUp' className="block hover:scale-105 transition-transform duration-300 w-[200px] cursor-pointer
                         text-[18px] text-(--color-btn-and-title) font-semibold mt-[20px]">Зарегистрироваться</Link>
                 </div>
                 <div className='relative'>
                     <Image src={entrance} alt='' width={480} height={376} draggable='false' />
-                    <Link href='/formPartTeam/one' className="absolute right-0 -bottom-[70px] block hover:scale-105 
-                        transition-transform duration-300 w-[220px] cursor-pointer 
+                    <Link href='/formPartTeam/one' className="absolute right-0 -bottom-[70px] block hover:scale-105
+                        transition-transform duration-300 w-[220px] cursor-pointer
                         text-[18px] text-(--color-btn-and-title) font-semibold mt-[10px]">Стать частью команды</Link>
                 </div>
             </div>
         </Container>
+    )
+}
+
+export default function Entrance() {
+    return (
+        <Suspense fallback={<div className="text-center py-20">Загрузка страницы входа...</div>}>
+            <EntranceContent />
+        </Suspense>
     )
 }
