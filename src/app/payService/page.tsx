@@ -7,18 +7,12 @@ import { useSearchParams } from "next/navigation";
 import Container from "@/components/UI/Container";
 import Input from "@/components/UI/Input";
 
-import { TBackPage } from "./layout";
-
 import useFormSelect from "@/store/formSelection/formSelectionStore";
 import useTariffs from "@/store/tariffs/tariffs";
 
 import coin from '../../../public/coin.png'
 
 export default function () {
-    const searchParams = useSearchParams()
-
-    const backPage: TBackPage = searchParams.get('backPage') as TBackPage
-
     const {
         numberCard, setNumberCard,
         validUntil, setValidUntil,
