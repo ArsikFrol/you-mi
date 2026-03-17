@@ -65,10 +65,14 @@ function EntranceContent() {
                             src={github} alt='' width={50} height={50} draggable='false' />
                     </div>
                     <form onSubmit={handleSubmit} className='flex flex-col gap-y-[20px] mb-[20px]'>
-                        <Input maxLength={100} onChange={setEmail} value={email} name='email'
-                            placeholder="email" width={380} height={50} oneTypeData="email"/>
-                        <Input maxLength={100} onChange={setPassword} value={password} name='password'
-                            placeholder="password" width={380} height={50} />
+                        <div className=''>
+                            <Input maxLength={100} onChange={setEmail} value={email} name='email'
+                                placeholder="email" width={380} height={50} oneTypeData="email"/>
+                        </div>
+                        <div className=''>
+                            <Input maxLength={100} onChange={setPassword} value={password} name='password'
+                                placeholder="password" width={380} height={50} />
+                        </div>
                         <button className='relative group block w-[380px]'>
                             <div className='w-[380px] relative z-10 cursor-pointer rounded-2xl
                                 bg-(--color-btn-and-title) text-white text-[20px] font-bold text-center leading-[70px]'>Войти</div>
