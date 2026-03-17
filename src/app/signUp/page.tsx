@@ -76,7 +76,7 @@ export default function SignUpPage() {
 
                     <div>
                         <label className="text-(--text) text-[16px] font-medium block mb-[20px]">Пароль</label>
-                        <Input maxLength={100} onChange={setPasswordUse} placeholder='Иванов'
+                        <Input maxLength={100} onChange={setPasswordUse} placeholder='password'
                             value={passwordUse} width={500} height={50} />
                     </div>
 
