@@ -15,7 +15,7 @@ const listElemRight = [
 
 export default function EmergencyAssistance() {
     return (
-        <div className="relative bg-(--bg) mx-auto my-25 p-12.5 rounded-2xl
+        <div className="relative bg-(-bg) mx-auto my-25 p-12.5 rounded-2xl
             4xl:w-[1500px]
             3xl:w-[1300px]
             2xl:w-[1200px]
@@ -26,11 +26,11 @@ export default function EmergencyAssistance() {
             <div className="mb-5 text-(--color-btn-and-title) font-extrabold
                 md:text-[40px]
                 max-md:text-[35px]">Экстренная помощь</div>
-            <div className="mb-7.5 text-(--text) 
+            <div className="mb-7.5 text-(--text)
                 xl:w-[780px]
                 max-xl:md:w-[550px]
-                md:text-[20px] max-md:text-[18px]">Если вам необходима 
-                <span className="font-semibold"> срочная психологическая помощь </span> 
+                md:text-[20px] max-md:text-[18px]">Если вам необходима
+                <span className="font-semibold"> срочная психологическая помощь </span>
                 и вы чувствуете, что не можете больше справиться самостоятельно, обратитесь по одному из контактов ниже.
             </div>
             <div className="mt-[50px] flex
@@ -41,7 +41,7 @@ export default function EmergencyAssistance() {
                         listElemLeft.map((obj: { id: number, tel: string, desc: string }, index: number) => {
                             return (
                                 <div className="text-(--text) flex flex-col gap-y-[5px]" key={index}>
-                                    <div className="font-semibold 
+                                    <div className="font-semibold
                                         md:text-[24px]
                                         max-md:text-[20px]">{obj.tel}</div>
                                     <div className="md:text-[20px] max-md:text-[18px]">{obj.desc}</div>
@@ -55,7 +55,7 @@ export default function EmergencyAssistance() {
                         listElemRight.map((obj: { id: number, tel: string, desc: string }, index: number) => {
                             return (
                                 <div className="text-(--text) flex flex-col gap-y-[5px]" key={index}>
-                                    <div className="font-semibold 
+                                    <div className="font-semibold
                                         md:text-[24px]
                                         max-md:text-[20px]">{obj.tel}</div>
                                     <div className="md:text-[20px] max-md:text-[18px]">{obj.desc}</div>
@@ -65,7 +65,7 @@ export default function EmergencyAssistance() {
                     }
                 </div>
             </div>
-            <Image  src={specialist} alt='' width={240} height={240} draggable='false' 
+            <Image  src={specialist} alt='' width={240} height={240} draggable='false'
                 className="absolute right-25 -top-12.5
                     max-lg:hidden" />
         </div>

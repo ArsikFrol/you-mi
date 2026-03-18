@@ -17,7 +17,7 @@ export default function ScheduleTable() {
     const [plusCount, setPlusCount] = React.useState<number>(0)
 
     return (
-        <div className='bg-(--bg) w-[1200px] mx-auto rounded-2xl py-[70px] px-[50px] mb-[100px]'>
+        <div className='bg-(-bg) w-[1200px] mx-auto rounded-2xl py-[70px] px-[50px] mb-[100px]'>
             <SliderWeeks plusCount={plusCount} setPlusCount={setPlusCount} />
             <RowWeeks plusCount={plusCount} />
             <div className='flex gap-x-[30px]'>

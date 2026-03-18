@@ -60,7 +60,7 @@ export default function ProfileRight() {
         <>
             {globalActiveDay !== 0 ?
                 <div className='flex items-center'>
-                    <div className='bg-(--bg) rounded-2xl p-[50px]'>
+                    <div className='bg-(-bg) rounded-2xl p-[50px]'>
                         <div className='text-(--color-btn-and-title) text-[18px] font-medium pl-[20px] mb-[30px] text-center'>
                             {listMonthName[monthNow]} {yearNow}
                         </div>
@@ -115,7 +115,7 @@ export default function ProfileRight() {
                         </div>
                     </div>
                 </div> :
-                <div className='w-[550px] bg-(--bg) px-[60px] py-[50px] rounded-2xl'>
+                <div className='w-[550px] bg-(-bg) px-[60px] py-[50px] rounded-2xl'>
                     <div className='w-[430px] text-(--text) text-[44px] font-semibold mb-[30px] text-center'>
                         У вас нет запланированных сессий
                     </div>

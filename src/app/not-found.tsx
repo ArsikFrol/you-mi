@@ -8,7 +8,7 @@ export default function NotFound() {
             <Header white />
             <Container minH>
                 <>
-                    <div className='bg-(--bg) p-[100px] text-center rounded-2xl text-[40px]'>
+                    <div className='bg-bg p-[100px] text-center rounded-2xl text-[40px]'>
                         <span>Страница не найдена 😩</span>
                     </div>
                     <div className='w-[360px] mx-auto mt-[100px]'>

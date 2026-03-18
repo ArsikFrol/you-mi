@@ -22,7 +22,7 @@ export default function FavoritePsychologists(props: Props) {
     }
 
     return (
-        <div className='bg-(--bg) rounded-2xl py-[50px] px-[100px] mt-[100px]'>
+        <div className='bg-(-bg) rounded-2xl py-[50px] px-[100px] mt-[100px]'>
             <div className='text-(--text) text-[24px] font-semibold mb-[20px]'>В избранном:</div>
             <div className='flex gap-x-[40px]'>
                 {

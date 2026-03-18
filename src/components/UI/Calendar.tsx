@@ -122,7 +122,7 @@ export default function Calendar(props: Props) {
                 ...(props.whereToShow === 'scheduleSession' && activeIdDay && { width: '760px' }),
                 ...(props.whereToShow === 'scheduleSession' && activeIdDay === 0 && { width: '430px' })
             }}>
-            <div className='w-[580px] bg-(--bg) p-[50px] mx-auto rounded-2xl select-none'
+            <div className='w-[580px] bg-(-bg) p-[50px] mx-auto rounded-2xl select-none'
                 style={{
                     ...(props.whereToShow === 'scheduleSession' && { padding: '0', width: '760px' })
                 }}>

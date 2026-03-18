@@ -27,14 +27,14 @@ export default function ChoiceFreeTime() {
     } = useCalendar()
 
     return (
-        <div className='bg-(--bg) w-[1200px] mx-auto rounded-2xl py-[70px] px-[50px] mt-[50px] mb-[100px]'>
+        <div className='bg-(-bg) w-[1200px] mx-auto rounded-2xl py-[70px] px-[50px] mt-[50px] mb-[100px]'>
             <SliderWeeks plusCount={plusCount} setPlusCount={setPlusCount} />
             <div className='flex gap-x-[30px] ml-[90px] mt-[50px]'>
                 {
                     listWeeks.map((obj: string, index: number) => {
                         return (
                             <div className='flex flex-col gap-y-[20px]' key={index}>
-                                <div className="w-[117px] text-center mx-auto text-[18px] 
+                                <div className="w-[117px] text-center mx-auto text-[18px]
                                     font-semibold text-(--color-btn-and-title) h-[40px] leading-[40px]"
                                     style={{
                                         ...(dayNow === (index + 1 + plusCount) ? {

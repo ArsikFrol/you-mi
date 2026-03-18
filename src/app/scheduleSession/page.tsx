@@ -10,7 +10,7 @@ export default function page() {
                 <>
                     <div className='text-(--color-btn-and-title)
                         text-[30px] font-extrabold mb-[30px]'>Запланировать сессию</div>
-                    <div className="bg-(--bg) py-[50px] px-[40px]">
+                    <div className="bg-(-bg) py-[50px] px-[40px]">
                         <CartScheduleSession />
                     </div>
                 </>

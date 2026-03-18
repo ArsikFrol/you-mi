@@ -127,7 +127,7 @@ export default function Tariffs() {
                                         {...animProps}
                                         whileInView={{ x: 0, y: 0, opacity: 1 }}
                                         viewport={{ once: false, amount: 0.5 }}
-                                        className="w-[280px] bg-(--bg) rounded-2xl">
+                                        className="w-[280px] bg-(-bg) rounded-2xl">
                                         <div className="w-[280px] bg-blue-50 rounded-t-2xl
                                                 text-center text-(--text) text-[18px] font-medium leading-[57px]">
                                             {obj.countSession} сессия
@@ -167,7 +167,7 @@ export default function Tariffs() {
                     </div>
                     {session.status === 'authenticated' ?
                         <>
-                            <div className='bg-(--bg) rounded-2xl py-[30px] px-[50px] flex items-center
+                            <div className='bg-(-bg) rounded-2xl py-[30px] px-[50px] flex items-center
                                 justify-between w-[880px] mb-[50px]'>
                                 <div className=''>
                                     <div className='text-(--text) text-[20px] font-semibold'>Включить автопродление</div>

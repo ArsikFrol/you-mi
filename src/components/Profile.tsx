@@ -85,7 +85,7 @@ export default function Profile(props: Props) {
                         initial={{ x: -200, opacity: 0 }}
                         whileInView={{ x: 0, opacity: 1 }}
                         viewport={{ once: false, amount: 0.5 }}
-                        className='w-[600px] h-[700px] bg-(--bg) px-[60px] py-[50px] rounded-2xl'>
+                        className='w-[600px] h-[700px] bg-(-bg) px-[60px] py-[50px] rounded-2xl'>
                         <div className='text-(--text) text-[24px] font-semibold mb-[20px]'>Ваш психолог:</div>
                         <div className='flex gap-x-[20px] items-center mb-[20px]'>
                             <Image src={listPsychologist[profileActivePsychologist].imagePhoto} alt=''
@@ -153,7 +153,7 @@ export default function Profile(props: Props) {
                         initial={{ x: 200, opacity: 0 }}
                         whileInView={{ x: 0, opacity: 1 }}
                         viewport={{ once: false, amount: 0.5 }}
-                        className='h-[700px] bg-(--bg) rounded-2xl flex items-center'>
+                        className='h-[700px] bg-(-bg) rounded-2xl flex items-center'>
                         <ProfileRight />
                     </motion.div>
                 </div>
