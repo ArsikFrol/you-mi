@@ -50,7 +50,7 @@ export default function PersonalDataSettings(props: Props) {
     return (
         <>
             <>
-                <div className='text-(--color-btn-and-title) font-extrabold text-[44px] mb-[50px] text-center'>Личные данные</div>
+                <div className='text-btn-and-title font-extrabold text-[44px] mb-[50px] text-center'>Личные данные</div>
                 <div className='w-[600px] mx-auto flex flex-col gap-y-[40px] h-[500px] overflow-y-scroll'>
                     <div className='text-left'>
                         <div className='text-[20px] mb-[10px]'>Имя</div>
@@ -68,9 +68,9 @@ export default function PersonalDataSettings(props: Props) {
                             placeholder="8-___-___-__-__ " value={numberUse} width={600} height={50} error={false} />
                     </div>
                     <div className=''>
-                        <div className='text-(--text) text-[16px] font-medium mb-[10px] text-left'>Пол</div>
-                        <div className='flex text-(--text) text-[16px] border-2
-                            border-(--color-btn-and-title) rounded-2xl h-[50px] w-[180px]'>
+                        <div className='text-text text-[16px] font-medium mb-[10px] text-left'>Пол</div>
+                        <div className='flex text-text text-[16px] border-2
+                            border-btn-and-title rounded-2xl h-[50px] w-[180px]'>
                             <div onClick={() => setGender('муж')} style={{
                                 ...(gender === 'муж' ? {
                                     fontWeight: '600',

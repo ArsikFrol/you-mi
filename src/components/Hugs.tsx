@@ -22,13 +22,13 @@ export default function Hugs() {
                     viewport={{ once: false, amount: 0.5 }}
                     transition={{ duration: 0.7, type: "spring", stiffness: 50 }}
                     className="max-lg:mx-auto">
-                    <div className='text-(--color-btn-and-title) font-extrabold text-[44px]
+                    <div className='text-btn-and-title font-extrabold text-[44px]
                         max-lg:text-center
                         max-md:text-center max-md:text-[35px]
                         max-xs:text-[30px]'>
                         Вместе мы справимся
                     </div>
-                    <div className="mb-[70px] text-(--text) font-semibold
+                    <div className="mb-[70px] text-text font-semibold
                         xl:w-[420px]
                         max-sm:w-[295px]
                         max-lg:mx-auto
@@ -46,7 +46,7 @@ export default function Hugs() {
                             widht={width && width >= 640 ?  380 : 290}
                             textBtn="Найти психолога"/>
                     </div>
-                    <div className="mt-[30px] text-[20px] font-semibold text-(--text)
+                    <div className="mt-[30px] text-[20px] font-semibold text-text
                         max-lg:text-center">
                         2770 руб. за 50 минут сессии
                     </div>

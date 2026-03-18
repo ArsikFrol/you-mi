@@ -34,8 +34,8 @@ export default function Btn(props: Props) {
                 ...(props.style)
             }} className='relative group block'>
             <div style={{ width: `${props.widht}px` }}
-                className='relative z-10 cursor-pointer rounded-2xl 
-                bg-(--color-btn-and-title) text-white text-[20px] font-bold text-center leading-[70px]'>
+                className='relative z-10 cursor-pointer rounded-2xl
+                bg-btn-and-title text-white text-[20px] font-bold text-center leading-[70px]'>
                 {props.textBtn}
             </div>
             <Image style={{ height: '70px' }}

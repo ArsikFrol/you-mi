@@ -51,7 +51,7 @@ export default function CardSlider(props: Props) {
     return (
         <Container purple>
             <>
-                <div className='text-(--text) text-[24px] font-semibold mb-[70px]'>{props.title}</div>
+                <div className='text-text text-[24px] font-semibold mb-[70px]'>{props.title}</div>
 
                 <div className='flex items-center gap-x-[50px] justify-between'>
                     <button
@@ -75,12 +75,12 @@ export default function CardSlider(props: Props) {
                             }}>
                             {props.listElem.map((obj: IRelated) => (
                                 <Link href={obj.link}
-                                    className="relative flex-shrink-0 h-[270px] pt-[10px] cursor-pointer 
+                                    className="relative flex-shrink-0 h-[270px] pt-[10px] cursor-pointer
                                         hover:scale-105 transition-transform duration-300"
                                     key={obj.id}
                                     style={{ width: `${itemWidth}px` }}>
                                     <div className='w-full h-[240px] bg-white relative z-10 rounded-2xl'>
-                                        <div className='w-[200px] text-(--text) text-[20px] font-medium pt-[20px] pl-[30px]'>
+                                        <div className='w-[200px] text-text text-[20px] font-medium pt-[20px] pl-[30px]'>
                                             {obj.title}
                                         </div>
                                         <Image
@@ -105,7 +105,7 @@ export default function CardSlider(props: Props) {
                     <button
                         onClick={clickRight}
                         disabled={currentIndex >= props.listElem.length - itemsToShow || isAnimating}
-                        className={`cursor-pointer hover:translate-x-2 transition-transform duration-300 
+                        className={`cursor-pointer hover:translate-x-2 transition-transform duration-300
                             ${currentIndex >= props.listElem.length - itemsToShow || isAnimating ? 'opacity-50 cursor-not-allowed' : ''}`}>
                         <Image
                             src={currentIndex >= props.listElem.length - itemsToShow ? rightNotActive : rightActive}
@@ -125,7 +125,7 @@ export default function CardSlider(props: Props) {
                                     setCurrentIndex(index);
                                 }
                             }}
-                            className={`cursor-pointer w-3 h-3 rounded-full transition-all duration-300 
+                            className={`cursor-pointer w-3 h-3 rounded-full transition-all duration-300
                                 ${currentIndex === index ? 'bg-blue-500' : 'bg-gray-300'}`}
                         />
                     ))}

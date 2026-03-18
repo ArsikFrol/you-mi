@@ -28,7 +28,7 @@ const listUsers: TListUsers[] = [
 export default function Dialogues() {
     return (
         <div>
-            <div className='text-(--color-btn-and-title) text-[20px] font-semibold mb-[30px]'>Сообщения</div>
+            <div className='text-btn-and-title text-[20px] font-semibold mb-[30px]'>Сообщения</div>
             <div className='flex flex-col gap-y-[20px] overflow-x-hidden h-[400px]'>
                 {
                     listUsers.map((obj: TListUsers, index: number) => {
@@ -40,10 +40,10 @@ export default function Dialogues() {
                                         src={obj.userImage} alt='' width={50} height={50} draggable='false' />
                                 </Link>
                                 <div className='flex flex-col'>
-                                    <div className='text-(--text) text-[18px] font-medium'>{obj.name}</div>
+                                    <div className='text-text text-[18px] font-medium'>{obj.name}</div>
                                     <div className='text-[rgba(77,77,82,0.7)] text-[16px] font-light'>{obj.lastMessage.slice(0, 18)}..</div>
                                 </div>
-                                <div className='text-(--text) text-[14px]'>{obj.lastTimeMessage}</div>
+                                <div className='text-text text-[14px]'>{obj.lastTimeMessage}</div>
                             </div>
                         )
                     })

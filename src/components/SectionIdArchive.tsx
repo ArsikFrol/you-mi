@@ -62,9 +62,9 @@ export default function SectionIdArchive() {
                     src={play} alt='' width={76} height={76} draggable='false' />
             </div>
             <div className='w-[760px] mx-auto'>
-                <div className='text-(--color-btn-and-title) text-[40px] font-extrabold mt-[40px]'>{listArchive[idElem].title}</div>
-                <div className='text-(--text) text-[18px] mt-[30px] mb-[60px]'>{renderTextWithBreaks(listArchive[idElem].bigDesc)}</div>
-                <div className='flex justify-between text-(--text) text-[20px] mb-[20px]'>
+                <div className='text-btn-and-title text-[40px] font-extrabold mt-[40px]'>{listArchive[idElem].title}</div>
+                <div className='text-text text-[18px] mt-[30px] mb-[60px]'>{renderTextWithBreaks(listArchive[idElem].bigDesc)}</div>
+                <div className='flex justify-between text-text text-[20px] mb-[20px]'>
                     <div className='font-semibold'>{listArchive[idElem].author}</div>
                     <div className=''>Эфир был: {listArchive[idElem].date}</div>
                 </div>
@@ -74,7 +74,7 @@ export default function SectionIdArchive() {
                         {
                             listArchive[idElem].tags.map((elem, index: number) => {
                                 return (
-                                    <div className="h-[40px] leading-[40px] text-(--text)bg-[rgba(235,245,255,1)]
+                                    <div className="h-[40px] leading-[40px] text-textbg-[rgba(235,245,255,1)]
                                     px-[10px] rounded-2xl"
                                         key={index}>{elem}</div>
                                 )
@@ -84,7 +84,7 @@ export default function SectionIdArchive() {
                 </div>
             </div>
             {showVidoe &&
-                <div className='w-full h-full bg-[rgba(74,70,117,0.6)] 
+                <div className='w-full h-full bg-[rgba(74,70,117,0.6)]
                     left-0 top-0 flex items-center z-100 fixed'>
                     <div className='mx-auto flex gap-x-[10px] items-start relative'>
                         <Image src={listArchive[idElem].bigImage} alt=''

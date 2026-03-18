@@ -134,7 +134,7 @@ export default function Calendar(props: Props) {
                         })
                     }}>
                     <div className=''>
-                        <div className='text-center text-(--color-btn-and-title) text-[24px] font-semibold mb-[30px] w-[430px] mx-auto'>
+                        <div className='text-center text-btn-and-title text-[24px] font-semibold mb-[30px] w-[430px] mx-auto'>
                             Выберите дату, время и тариф
                         </div>
                         <SliderMonth whereToShow={props.whereToShow} setActiveIdDay={setActiveIdDay} setShowBtnChoose={setShowBtnChoose}
@@ -144,7 +144,7 @@ export default function Calendar(props: Props) {
                             {
                                 ['Пн', 'Вт', 'Ср', 'Чт', 'Пт', 'Сб', 'Вс'].map((day: string, index: number) => {
                                     return (
-                                        <div className="w-[68px] text-center text-(--color-btn-and-title) text-[18px] font-semibold" key={index}>{day}</div>
+                                        <div className="w-[68px] text-center text-btn-and-title text-[18px] font-semibold" key={index}>{day}</div>
                                     )
                                 })
                             }

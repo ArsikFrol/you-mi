@@ -71,21 +71,21 @@ export default function HowReferral() {
                                     className="w-[250px] text-center flex items-center gap-x-[60px]" >
                                     <div className="">
                                         <div className="relative mb-[50px]">
-                                            <Image className="relative z-10 mx-auto" 
-                                                src={obj.count} alt='' width={obj.width} height={100} 
+                                            <Image className="relative z-10 mx-auto"
+                                                src={obj.count} alt='' width={obj.width} height={100}
                                                 draggable='false' />
-                                            <Image style={{ width: '120px', height: '110px' }} 
-                                                className="absolute top-[25px] left-[25%]" src={bgCount} alt='' 
+                                            <Image style={{ width: '120px', height: '110px' }}
+                                                className="absolute top-[25px] left-[25%]" src={bgCount} alt=''
                                                 width={120} height={110} draggable='false' />
                                         </div>
-                                        <div className="w-[230px] mx-auto text-(--text) text-center text-[20px]">
+                                        <div className="w-[230px] mx-auto text-text text-center text-[20px]">
                                             {obj.text}
                                         </div>
                                     </div>
-                                    <Image style={obj.id == 3 || obj.id == 2 ? { display: 'none' } : {}} 
+                                    <Image style={obj.id == 3 || obj.id == 2 ? { display: 'none' } : {}}
                                         src={arrowOne} alt='' width={150} height={150} draggable='false' />
-                                    <Image style={obj.id == 1 || obj.id == 3 ? { display: 'none' } : 
-                                        { marginBottom: '40px' }} src={arrowTwo} alt='' width={150} height={150} 
+                                    <Image style={obj.id == 1 || obj.id == 3 ? { display: 'none' } :
+                                        { marginBottom: '40px' }} src={arrowTwo} alt='' width={150} height={150}
                                         draggable='false' />
                                 </motion.div>
                             )

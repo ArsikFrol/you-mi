@@ -26,7 +26,7 @@ export default function Reminder(props: Props) {
                 </div>
             }
             {!props.showReminder &&
-                <div className='text-[16px] text-(--text)opacity-50 w-[150px] mb-[10px]
+                <div className='text-[16px] text-textopacity-50 w-[150px] mb-[10px]
                     hover:scale-105 transition-transform duration-300 cursor-pointer'
                     onClick={() => props.setShowReminder(true)}>
                     Показать памятку

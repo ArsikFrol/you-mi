@@ -129,18 +129,18 @@ export default function Tariffs() {
                                         viewport={{ once: false, amount: 0.5 }}
                                         className="w-[280px] bg-(-bg) rounded-2xl">
                                         <div className="w-[280px] bg-blue-50 rounded-t-2xl
-                                                text-center text-(--text) text-[18px] font-medium leading-[57px]">
+                                                text-center text-text text-[18px] font-medium leading-[57px]">
                                             {obj.countSession} сессия
                                         </div>
                                         <div className="py-2.5 flex flex-col items-center
-                                            text-(--color-btn-and-title) text-[20px] font-medium">
+                                            text-btn-and-title text-[20px] font-medium">
                                             <span className="text-[24px] font-bold">
                                                 {formatNumberWithSpaceFromRight(obj.priceOneSession)}₽
                                             </span> за сессию
                                         </div>
                                         <div onClick={() => clickPay(obj.countSession * obj.priceOneSession, obj.countSession)}
                                             className="hover:scale-105 transition-transform duration-300 cursor-pointer
-                                            bg-(--color-btn-and-title) rounded-2xl text-[18px] text-white
+                                            bg-btn-and-title rounded-2xl text-[18px] text-white
                                             font-semibold w-[220px] h-[70px] mx-auto block">
                                             <span className="w-[100px] mx-auto block text-center pt-2">
                                                 Оплатить {formatNumberWithSpaceFromRight(obj.countSession * obj.priceOneSession)}₽
@@ -148,10 +148,10 @@ export default function Tariffs() {
                                         </div>
                                         <div style={obj.installmentPlan ? {} : { visibility: 'hidden' }}
                                             className="hover:scale-105 transition-transform duration-300 cursor-pointer
-                                            w-[220px] mx-auto leading-[50px] text-[18px] text-(--text)
+                                            w-[220px] mx-auto leading-[50px] text-[18px] text-text
                                             font-medium text-center bg-red-100 rounded-2xl my-2.5">В рассрочку</div>
                                         <div style={obj.benefit ? {} : { visibility: 'hidden' }}
-                                            className="w-[220px] mx-auto text-center text-(--color-btn-and-title)
+                                            className="w-[220px] mx-auto text-center text-btn-and-title
                                             text-[18px] font-medium py-2.5">
                                             Выгода {formatNumberWithSpaceFromRight(obj.benefit)}₽
                                         </div>
@@ -161,17 +161,17 @@ export default function Tariffs() {
                         }
                     </div>
                     <div className='flex items-center gap-x-[30px] mt-[50px] mb-[50px]'>
-                        <div className='text-(--text) text-[20px] font-medium'>На счету:</div>
+                        <div className='text-text text-[20px] font-medium'>На счету:</div>
                         <div className='w-[170px] h-[50px] leading-[50px] text-center rounded-2xl
-                            text-[20px] text-white bg-(--color-btn-and-title)'>{formatNumberWithSpaceFromRight(youHaveBalance)} ₽</div>
+                            text-[20px] text-white bg-btn-and-title'>{formatNumberWithSpaceFromRight(youHaveBalance)} ₽</div>
                     </div>
                     {session.status === 'authenticated' ?
                         <>
                             <div className='bg-(-bg) rounded-2xl py-[30px] px-[50px] flex items-center
                                 justify-between w-[880px] mb-[50px]'>
                                 <div className=''>
-                                    <div className='text-(--text) text-[20px] font-semibold'>Включить автопродление</div>
-                                    <div className='text-(--text) text-[16px] w-[560px] mt-[10px]'>
+                                    <div className='text-text text-[20px] font-semibold'>Включить автопродление</div>
+                                    <div className='text-text text-[16px] w-[560px] mt-[10px]'>
                                         Автоматически продлевает пакет после последней сессии.
                                         Не волнуйтесь, вы в любой момент сможете отменить подписку.</div>
                                 </div>

@@ -52,8 +52,8 @@ function EntranceContent() {
         <Container purple minH>
             <div className="flex justify-between items-center w-[1000px] mx-auto">
                 <div className="">
-                    <div className="text-(--color-btn-and-title) text-[44px] font-extrabold">Вход в YouMi</div>
-                    <div className="text-[24px] text-(--text)font-medium w-[380px]">
+                    <div className="text-btn-and-title text-[44px] font-extrabold">Вход в YouMi</div>
+                    <div className="text-[24px] text-textfont-medium w-[380px]">
                         Введите свою почту и пароль или войдите по любому провайдеру
                     </div>
                     <div className='flex gap-x-[10px] w-[380px] my-[20px]'>
@@ -75,19 +75,19 @@ function EntranceContent() {
                         </div>
                         <button className='relative group block w-[380px]'>
                             <div className='w-[380px] relative z-10 cursor-pointer rounded-2xl
-                                bg-(--color-btn-and-title) text-white text-[20px] font-bold text-center leading-[70px]'>Войти</div>
+                                bg-btn-and-title text-white text-[20px] font-bold text-center leading-[70px]'>Войти</div>
                             <Image style={{ height: '70px' }} className='absolute top-2.5 left-2.5 transition-transform
                                 group-hover:translate-[-5px]' src={bg} alt='' width={380} />
                         </button>
                     </form>
                     <Link href='/signUp' className="block hover:scale-105 transition-transform duration-300 w-[200px] cursor-pointer
-                        text-[18px] text-(--color-btn-and-title) font-semibold mt-[20px]">Зарегистрироваться</Link>
+                        text-[18px] text-btn-and-title font-semibold mt-[20px]">Зарегистрироваться</Link>
                 </div>
                 <div className='relative'>
                     <Image src={entrance} alt='' width={480} height={376} draggable='false' />
                     <Link href='/formPartTeam/one' className="absolute right-0 -bottom-[70px] block hover:scale-105
                         transition-transform duration-300 w-[220px] cursor-pointer
-                        text-[18px] text-(--color-btn-and-title) font-semibold mt-[10px]">Стать частью команды</Link>
+                        text-[18px] text-btn-and-title font-semibold mt-[10px]">Стать частью команды</Link>
                 </div>
             </div>
         </Container>

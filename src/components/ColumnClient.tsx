@@ -34,7 +34,7 @@ export default function ColumnClient(props: Props) {
             style={{
                 ...(props.activeClient === 0 && { margin: '0 auto' })
             }}>
-            <div className='text-(--color-btn-and-title) text-[20px] font-semibold mb-[30px]'
+            <div className='text-btn-and-title text-[20px] font-semibold mb-[30px]'
                 style={{
                     ...(props.activeClient === 0 && { textAlign: 'center' })
                 }}>
@@ -56,7 +56,7 @@ export default function ColumnClient(props: Props) {
                                 onClick={() => props.setActiveClient(obj.id)}
                                 key={index}>
                                 <Image src={obj.image} alt='' width={50} height={50} draggable='false' />
-                                <div className='text-(--text) text-[16px]'
+                                <div className='text-text text-[16px]'
                                     style={{
                                         ...(props.activeClient === obj.id ? {
                                             color: 'rgba(120, 114, 185, 1)',

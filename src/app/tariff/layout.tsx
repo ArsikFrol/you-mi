@@ -34,14 +34,14 @@ export default function TariffLayout({
         <>
             <Header showNav
                 white={['/tariff/history', '/tariff/topUpBalance', '/tariff/referralProgram'].includes(pathName)} />
-            <Container purple={['/tariff'].includes(pathName)} 
+            <Container purple={['/tariff'].includes(pathName)}
                 paddingNoneY>
                 <div className='grid mx-auto py-[50px]
-                    4xl:w-[1500px]       
+                    4xl:w-[1500px]
                     3xl:w-[1300px]
                     2xl:w-[1200px]
                     xl:w-[1140px] xl:text-[20px]
-                    lg:max-xl:w-[960px] lg:grid-cols-[1fr_1fr_1.5fr_1.5fr] max-lg:grid-cols-2 
+                    lg:max-xl:w-[960px] lg:grid-cols-[1fr_1fr_1.5fr_1.5fr] max-lg:grid-cols-2
                         max-lg:gap-y-[20px] max-xl:text-[18px]
                     md:max-lg:w-[690px]'>
                     {
@@ -55,7 +55,7 @@ export default function TariffLayout({
                                             color: 'white'
                                         } : {})
                                     }}
-                                    className="text-center text-(--text) font-medium h-[50px] leading-[50px]" 
+                                    className="text-center text-text font-medium h-[50px] leading-[50px]"
                                     key={index}>{obj.text}</Link>
                             )
                         })

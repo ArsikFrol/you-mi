@@ -68,12 +68,12 @@ export default function ThreeElem(props: Props) {
             <div className='w-[px]'>
                 <Title text='Онлайн-психотерапия становится комфортнее' />
             </div>
-            <div className={`flex justify-between mx-auto mt-[200px] 
+            <div className={`flex justify-between mx-auto mt-[200px]
                 xl:w-[1200px]
                 lg:w-[960px]
                 max-lg:grid max-lg:grid-rows-3 max-lg:gap-y-[150px]
                 md:w-[690px] max-md:grid-rows-[250px_${props.listElem === 'home' ? 300 : 320}px_250px] max-md:px-[30px]
-                sm:w-[400px]`}>  
+                sm:w-[400px]`}>
                 {
                     props.listElem == 'home' ? listElemHome.map((obj: TObj, index: number) => {
                         const animProps = getAnimationProps(obj.id)
@@ -86,19 +86,19 @@ export default function ThreeElem(props: Props) {
                                     xl:w-[380px]
                                     lg:w-[300px] ${obj.id === 2 ? 'lg:h-[330px]' : 'lg:h-[300px]'}
                                     ${obj.id === 2 ? 'md:max-lg:h-[250px]' : ''}`}>
-                                <Image className='absolute 
+                                <Image className='absolute
                                     xl:top-[-140px] xl:left-[20%]
                                     lg:left-[15%]
                                     md:left-[35%] md:w-[220px] md:h-[220px] md:top-[-140px]
                                     sm:h-[190px] sm:w-[190px] sm:top-[-120px] sm:left-[22%]'
                                     src={obj.image} alt='' width={220} height={220} draggable="false" />
-                                <div className='text-(--text) font-semibold mb-5
+                                <div className='text-text font-semibold mb-5
                                         xl:text-[24px]
-                                        lg:text-[20px] max-lg:text-[25px] 
+                                        lg:text-[20px] max-lg:text-[25px]
                                         sm:text-[18px]'>
                                     {obj.title}
                                 </div>
-                                <div className={`text-(--text) text-[17px]
+                                <div className={`text-text text-[17px]
                                         max-lg:text-[20px]
                                         ${obj.id === 2 ? 'sm:h-[120px]' : 'sm:h-[100px]'}`}>
                                     {obj.desc}
@@ -116,17 +116,17 @@ export default function ThreeElem(props: Props) {
                                     xl:w-[380px]
                                     lg:max-xl:w-[300px] ${obj.id === 2 ? 'lg:max-xl:h-[350px]' : 'lg:max-xl:h-[300px]'}
                                     ${obj.id === 2 ? 'md:max-lg:h-[250px]' : ''}`}>
-                                <Image className="absolute 
+                                <Image className="absolute
                                     xl:top-[-140px] xl:left-[20%]
                                     lg:left-[15%]
                                     md:left-[35%] md:w-[220px] md:h-[220px] md:top-[-140px]
                                     sm:h-[190px] sm:w-[190px] sm:top-[-120px] sm:left-[22%]"
                                     src={obj.image} alt='' width={220} height={220} draggable="false" />
-                                <div className="text-(--text) font-semibold mb-5
+                                <div className="text-text font-semibold mb-5
                                         xl:text-[24px]
-                                        lg:text-[20px] max-lg:text-[25px] 
+                                        lg:text-[20px] max-lg:text-[25px]
                                         sm:text-[18px]">{obj.title}</div>
-                                <div className={`text-(--text) text-[17px]
+                                <div className={`text-text text-[17px]
                                         max-lg:text-[20px]
                                         ${obj.id === 2 ? 'sm:h-[200px]' : 'sm:h-[100px]'}`}>{obj.desc}</div>
                             </motion.div>

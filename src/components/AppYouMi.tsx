@@ -31,13 +31,13 @@ export default function AppYouMi() {
                   viewport={{ once: false, amount: 0.5 }}
                   transition={{ duration: 0.7, type: "spring", stiffness: 50 }}
                   className="max-xl:mx-auto">
-                  <div className="text-(--color-btn-and-title) font-extrabold mb-10
+                  <div className="text-btn-and-title font-extrabold mb-10
                      max-xl:text-center
                      md:w-[680px] md:text-[40px]
                      sm:text-[35px]">
                      YouMi заботиться о вас даже вне сессий
                   </div>
-                  <div className="w-[580px] text-(--text) text-[20px] font-semibold mb-10
+                  <div className="w-[580px] text-text text-[20px] font-semibold mb-10
                      max-xl:text-center max-xl:mx-auto">
                      Работая с YouMi от 4 сессий мы дарим доступ к приложению с виртуальным психологом.
                   </div>
@@ -48,7 +48,7 @@ export default function AppYouMi() {
                               <div className="flex gap-x-[20px] items-center
                                  max-xl:w-[500px] max-xl:mx-auto" key={index}>
                                  <Image src={checkMark} alt='' width={40} height={40} draggable='false' />
-                                 <div className="text-(--text) text-[18px] w-[440px]">{obj.text}</div>
+                                 <div className="text-text text-[18px] w-[440px]">{obj.text}</div>
                               </div>
                            )
                         })
@@ -63,7 +63,7 @@ export default function AppYouMi() {
                   className="xl:block
                      lg:hidden">
                   <Image className='mr-42.5' src={screenOne} alt='' width={206} height={433} draggable='false' />
-                  <Image src={screenTwo} alt='' width={210} height={437} draggable='false' 
+                  <Image src={screenTwo} alt='' width={210} height={437} draggable='false'
                      className="absolute right-0 top-5" />
                </motion.div>
             </div>

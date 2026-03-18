@@ -57,12 +57,12 @@ export default function SliderMonth(props: Props) {
                 }}
                     onClick={clickLeft}
                     className='w-[30px] h-[27px] group cursor-pointer'>
-                    <Image className="block mx-auto py-[5px] group-hover:scale-105 
+                    <Image className="block mx-auto py-[5px] group-hover:scale-105
                                             group-hover:-translate-x-[5px] transition-transform duration-300"
                         src={leftActive} alt='' width={8} height={16} draggable='false' />
                 </div>
                 <div style={props.whereToShow === 'formSelectionPsychologist' ? { width: '460px' } : {}}
-                    className='w-[320px] text-(--color-btn-and-title) text-[20px] font-medium text-center'>
+                    className='w-[320px] text-btn-and-title text-[20px] font-medium text-center'>
                     {listMonthName[activeMonth]}
                 </div>
                 <div style={{
@@ -71,7 +71,7 @@ export default function SliderMonth(props: Props) {
                 }}
                     onClick={clickRight}
                     className='w-[30px] h-[27px] group cursor-pointer'>
-                    <Image className="block mx-auto py-[5px] group-hover:scale-105 
+                    <Image className="block mx-auto py-[5px] group-hover:scale-105
                                             group-hover:translate-x-[5px] transition-transform duration-300"
                         src={rightActive} alt='' width={8} height={16} draggable='false' />
                 </div>

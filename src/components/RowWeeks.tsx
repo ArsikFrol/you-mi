@@ -20,8 +20,8 @@ export default function RowWeeks(props: Props) {
             {
                 listWeeks.map((obj: string, index: number) => {
                     return (
-                        <div className="w-[117px] text-center mx-auto text-[18px] 
-                            font-semibold text-(--color-btn-and-title) h-[40px] leading-[40px]"
+                        <div className="w-[117px] text-center mx-auto text-[18px]
+                            font-semibold text-btn-and-title h-[40px] leading-[40px]"
                             style={{
                                 ...(dayNow === (index + 1 + props.plusCount) ? {
                                     background: 'rgba(120, 114, 185, 1)',

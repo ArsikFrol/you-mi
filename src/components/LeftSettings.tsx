@@ -27,7 +27,7 @@ export default function LeftSettings(props: Props) {
             {
                 listTitleSettings.map((obj, index: number) => {
                     return(
-                        <div className={`text-[18px] text-(--text) leading-[40px] w-[200px]
+                        <div className={`text-[18px] text-text leading-[40px] w-[200px]
                             hover:scale-105 transition-transform duration-300 cursor-pointer
                             ${props.activeSettings === obj.type ? 'bg-[rgba(74,70,117,0.2)] rounded-2xl text-center font-medium' : ''}`}
                             key={index}

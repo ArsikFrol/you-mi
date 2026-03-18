@@ -44,10 +44,10 @@ export default function RunningLine() {
                                     color: 'white',
                                     border: 'none'
                                 } : {}}
-                                className="whitespace-nowrap border-2 border-(--color-btn-and-title) 
-                                    rounded-[25px] text-[20px] text-(--color-btn-and-title) 
+                                className="whitespace-nowrap border-2 border-btn-and-title
+                                    rounded-[25px] text-[20px] text-btn-and-title
                                     font-semibold px-[40px] h-[50px] leading-[46px]
-                                    
+
                                     max-md:text-[17px]">
                                 {elem.text}
                             </div>
@@ -61,10 +61,10 @@ export default function RunningLine() {
                                     color: 'white',
                                     border: 'none'
                                 } : {}}
-                                className="whitespace-nowrap border-2 border-(--color-btn-and-title) 
-                                    rounded-[25px] text-[20px] text-(--color-btn-and-title) 
+                                className="whitespace-nowrap border-2 border-btn-and-title
+                                    rounded-[25px] text-[20px] text-btn-and-title
                                     font-semibold px-[40px] h-[50px] leading-[46px]
-                                    
+
                                     max-md:text-[17px]">
                                 {elem.text}
                             </div>
@@ -82,10 +82,10 @@ export default function RunningLine() {
                                     color: 'white',
                                     border: 'none'
                                 } : {}}
-                                className="whitespace-nowrap border-2 border-(--color-btn-and-title) 
-                                    rounded-[25px] text-[20px] text-(--color-btn-and-title) 
+                                className="whitespace-nowrap border-2 border-btn-and-title
+                                    rounded-[25px] text-[20px] text-btn-and-title
                                     font-semibold px-[40px] h-[50px] leading-[46px]
-                                    
+
                                     max-md:text-[17px]">
                                 {elem.text}
                             </div>
@@ -99,10 +99,10 @@ export default function RunningLine() {
                                     color: 'white',
                                     border: 'none'
                                 } : {}}
-                                className="whitespace-nowrap border-2 border-(--color-btn-and-title) 
-                                    rounded-[25px] text-[20px] text-(--color-btn-and-title) 
+                                className="whitespace-nowrap border-2 border-btn-and-title
+                                    rounded-[25px] text-[20px] text-btn-and-title
                                     font-semibold px-[40px] h-[50px] leading-[46px]
-                                    
+
                                     max-md:text-[17px]">
                                 {elem.text}
                             </div>

@@ -77,7 +77,7 @@ export default function GridDays(props: Props) {
                                 onClick={monthNow === activeMonth &&
                                     dayNow > obj.id || obj.status === 'crossedOut' ? undefined : () => props.clickIdDay(obj.id)}
                                 key={obj.id}
-                                className={`text-center text-(--color-btn-and-title)
+                                className={`text-center text-btn-and-title
                                     text-[18px] font-semibold h-[48px] leading-[48px]
                                     ${monthNow === activeMonth && dayNow > obj.id || obj.status === 'crossedOut'
                                         ? 'cursor-default hover:scale-100'
@@ -129,7 +129,7 @@ export default function GridDays(props: Props) {
                                     onClick={monthNow === activeMonth && dayNow > obj.id ||
                                         obj.status === 'crossedOut' ? undefined : () => props.clickIdDay(obj.id)}
                                     key={obj.id}
-                                    className={`text-center text-(--color-btn-and-title) text-[18px] font-semibold h-[48px] leading-[48px]
+                                    className={`text-center text-btn-and-title text-[18px] font-semibold h-[48px] leading-[48px]
                                         ${monthNow === activeMonth && dayNow > obj.id || obj.status === 'crossedOut'
                                             ? 'cursor-default hover:scale-100'
                                             : 'hover:scale-115 transition-transform duration-100 cursor-pointer'

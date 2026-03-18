@@ -61,14 +61,14 @@ export default function ProfileRight() {
             {globalActiveDay !== 0 ?
                 <div className='flex items-center'>
                     <div className='bg-(-bg) rounded-2xl p-[50px]'>
-                        <div className='text-(--color-btn-and-title) text-[18px] font-medium pl-[20px] mb-[30px] text-center'>
+                        <div className='text-btn-and-title text-[18px] font-medium pl-[20px] mb-[30px] text-center'>
                             {listMonthName[monthNow]} {yearNow}
                         </div>
                         <div className='flex justify-between mb-[40px]'>
                             {
                                 ['Пн', 'Вт', 'Ср', 'Чт', 'Пт', 'Сб', 'Вс'].map((day: string, index: number) => {
                                     return (
-                                        <div className="w-[68px] text-center text-(--color-btn-and-title) text-[18px] font-semibold"
+                                        <div className="w-[68px] text-center text-btn-and-title text-[18px] font-semibold"
                                             key={index}>{day}</div>
                                     )
                                 })
@@ -101,12 +101,12 @@ export default function ProfileRight() {
                                                 borderBottomRightRadius: '16px',
                                             } : {})
                                         }}
-                                        className='text-center text-(--color-btn-and-title)
+                                        className='text-center text-btn-and-title
                                                 text-[18px] font-semibold leading-[44px] h-[44px]'>{obj.id}</div>
                                 ))
                             }
                         </div>
-                        <div className='text-white text-[24px] font-semibold bg-(--color-btn-and-title)
+                        <div className='text-white text-[24px] font-semibold bg-btn-and-title
                                     w-[300px] h-[100px] leading-[50px] mx-auto text-center rounded-2xl mt-[30px]'>
                             {daysLeft !== 0 ?
                                 <span>До сессии {daysLeft} дней, начало в {globalActiveTime}</span>
@@ -116,7 +116,7 @@ export default function ProfileRight() {
                     </div>
                 </div> :
                 <div className='w-[550px] bg-(-bg) px-[60px] py-[50px] rounded-2xl'>
-                    <div className='w-[430px] text-(--text) text-[44px] font-semibold mb-[30px] text-center'>
+                    <div className='w-[430px] text-text text-[44px] font-semibold mb-[30px] text-center'>
                         У вас нет запланированных сессий
                     </div>
                     <Image className='block mx-auto' src={noSessions} alt='' width={222} height={222} draggable='false' />

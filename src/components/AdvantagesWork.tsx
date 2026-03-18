@@ -138,7 +138,7 @@ export default function AdvantagesWork() {
                                     style={obj.id == 2 || obj.id == 4 ?
                                         { height: `${obj.heightBg}px`, marginLeft: 'auto' } :
                                         { height: `${obj.heightBg}px` }}
-                                    className="relative w-205 text-(--text) text-[24px]">
+                                    className="relative w-205 text-text text-[24px]">
                                     <Image className="absolute z-11 -top-17.5 left-12.5" src={obj.image}
                                         alt='' width={160} height={160} draggable='false' />
                                     <div style={{ height: `${obj.heightBg}px` }} className="relative z-10 text-[20px] bg-white rounded-2xl">

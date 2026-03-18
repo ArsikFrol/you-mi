@@ -69,32 +69,32 @@ export default function History() {
                                             width={240} height={240} draggable='false' />
                                     </div>
                                     <div className="">
-                                        <div className="relative text-(--text) mb-[50px] 
+                                        <div className="relative text-text mb-[50px]
                                             lg:text-[20px] lg:w-[600px]
-                                            max-lg:text-[16px] 
+                                            max-lg:text-[16px]
                                             md:max-lg:w-[500px]
                                             sm:w-[400px]">
-                                            <Image style={{ transform: 'rotate(180deg)' }} 
-                                                className="absolute 
+                                            <Image style={{ transform: 'rotate(180deg)' }}
+                                                className="absolute
                                                     lg:top-[-30px] lg:left-[30px]
                                                     sm:max-lg:top-[-40px] sm:max-lg:left-[-10px]"
                                                 src={quotes} alt='' width={40} height={40} draggable='false' />
                                             <div className="mx-auto
                                                 md:w-[400px]
                                                 sm:max-md:w-[300px]">{obj.text}</div>
-                                            <Image className="absolute 
+                                            <Image className="absolute
                                                 lg:bottom-[-20px] lg:right-[50px]
-                                                max-lg:bottom-[-40px] max-lg:right-[50px]" 
+                                                max-lg:bottom-[-40px] max-lg:right-[50px]"
                                                 src={quotes} alt='' width={40}
                                                 height={40} draggable='false' />
                                         </div>
                                         <div className={`${obj.id === 2 ? 'md:max-lg:mr-[30px]' : ''}`}>
-                                            <div className="text-(--color-btn-and-title) font-bold text-right
+                                            <div className="text-btn-and-title font-bold text-right
                                                 md:text-[24px]
                                                 sm:max-md:text-[20px]">
                                                 {obj.name}
                                             </div>
-                                            <div className='text-(--text) text-right
+                                            <div className='text-text text-right
                                                 md:text-[16px]
                                                 sm:max-md:text-[14px]'>
                                                 Сооснователь YouMi

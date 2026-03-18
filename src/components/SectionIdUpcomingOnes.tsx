@@ -73,23 +73,23 @@ export default function SectionIdUpcomingOnes() {
                 width={780} height={450} draggable='false'
                 className="mx-auto mt-[70px]" />
             <div className='w-[760px] mx-auto'>
-                <div className='text-(--color-btn-and-title) text-[40px] font-extrabold mt-[40px]'>{listUpcomingOnes[idElem].title}</div>
-                <div className='text-(--text) text-[18px] mt-[30px] mb-[60px]'>{renderTextWithBreaks(listUpcomingOnes[idElem].bigDesc)}</div>
-                <div className='flex justify-between text-(--text) text-[20px] mb-[20px]'>
+                <div className='text-btn-and-title text-[40px] font-extrabold mt-[40px]'>{listUpcomingOnes[idElem].title}</div>
+                <div className='text-text text-[18px] mt-[30px] mb-[60px]'>{renderTextWithBreaks(listUpcomingOnes[idElem].bigDesc)}</div>
+                <div className='flex justify-between text-text text-[20px] mb-[20px]'>
                     <div className='font-semibold'>{listUpcomingOnes[idElem].author}</div>
                     <div className=''>Эфир будет: {listUpcomingOnes[idElem].dateStart}</div>
                 </div>
                 {listUpcomingOnes[idElem].price ?
                     <div className='flex items-center gap-x-[30px] mt-[30px] mb-[20px]'>
-                        <div className='text-(--text) text-[20px] font-medium'>Вебинар стоит:</div>
+                        <div className='text-text text-[20px] font-medium'>Вебинар стоит:</div>
                         <div className='w-[170px] h-[50px] leading-[50px] text-center rounded-2xl
-                        text-[20px] text-white bg-(--color-btn-and-title)'>
+                        text-[20px] text-white bg-btn-and-title'>
                             {formatNumberWithSpaceFromRight(listUpcomingOnes[idElem].price)} ₽
                         </div>
                     </div>
                     :
                     <div className='font-semibold h-[60px] leading-[60px] bg-[rgba(235,245,255,1)] mx-auto mt-[40px]
-                            px-[20px] rounded-2xl w-[450px] text-center text-[30px] text-(--color-btn-and-title) mb-[40px]'>
+                            px-[20px] rounded-2xl w-[450px] text-center text-[30px] text-btn-and-title mb-[40px]'>
                         Вебинар бесплатный
                     </div>
                 }
@@ -99,7 +99,7 @@ export default function SectionIdUpcomingOnes() {
                         {
                             listUpcomingOnes[idElem].tags.map((elem, index: number) => {
                                 return (
-                                    <div className="h-[40px] leading-[40px] text-(--text)bg-[rgba(235,245,255,1)]
+                                    <div className="h-[40px] leading-[40px] text-textbg-[rgba(235,245,255,1)]
                                     px-[10px] rounded-2xl"
                                         key={index}>{elem}</div>
                                 )

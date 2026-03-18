@@ -22,8 +22,8 @@ export default function CartScheduleSession() {
                 <CalendarScheduleSession activeClient={activeClient} setActiveClient={setActiveClient} />
             </div>
             <div className='flex justify-between w-[500px] mx-auto items-center'>
-                <div className='border border-(--color-btn-and-title) rounded-2xl h-[60px] leading-[60px]
-                    hover:scale-105 transition-transform duration-300 cursor-pointer text-(--color-btn-and-title)
+                <div className='border border-btn-and-title rounded-2xl h-[60px] leading-[60px]
+                    hover:scale-105 transition-transform duration-300 cursor-pointer text-btn-and-title
                     text-[20px] font-semibold text-center w-[240px]'>Отменить сессию</div>
                 <Btn textBtn='Сохранить' widht={240} />
             </div>

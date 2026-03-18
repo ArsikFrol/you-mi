@@ -25,7 +25,7 @@ export default function PathFromLinks(props: Props) {
     return (
         <Container paddingNoneY>
             <div className='flex items-center justify-between h-[50px]'>
-                <div className='flex items-center gap-x-[20px] text-(--text) text-[24px] font-semibold'>
+                <div className='flex items-center gap-x-[20px] text-text text-[24px] font-semibold'>
                     <Link href={`http://localhost:3000/${props.backTwo || ''}`}
                         className={props.twoPath ? 'hover:scale-103 transition-transform duration-300' : ''}
                         style={{

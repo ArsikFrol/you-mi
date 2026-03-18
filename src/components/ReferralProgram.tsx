@@ -18,13 +18,13 @@ export default function ReferralProgram(props: Props) {
       insidePadding={props.insidePadding} relative={props.relative}>
       <div className='w-[580px]
           max-lg:mx-auto'>
-         <div className='text-(--text) text-[24px] font-semibold
+         <div className='text-text text-[24px] font-semibold
                max-lg:text-center'> Реферальная программа</div>
-         <div className='text-(--color-btn-and-title) text-[40px] font-extrabold mb-5
+         <div className='text-btn-and-title text-[40px] font-extrabold mb-5
               max-lg:text-center'>
             Позаботьтесь о других
          </div>
-         <div className='w-[480px] text-(--text) text-[18px]
+         <div className='w-[480px] text-text text-[18px]
             max-lg:text-center max-lg:mx-auto'>
           С помощью реферальной программы вы можете приглашать своих друзей по вашей индивидуальной
           ссылке и получать 500 рублей за каждого, кто пройдет первую сессию. <br /> <br />

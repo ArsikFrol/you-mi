@@ -27,7 +27,7 @@ export default function Input(props: Props) {
 
     const borderClass = error
         ? 'border-red-500 focus:outline-red-300 bg-red-50'
-        : 'border-(--color-btn-and-title) focus:outline-blue-200'
+        : 'border-btn-and-title focus:outline-blue-200'
 
     return (
         <>

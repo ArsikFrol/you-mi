@@ -86,28 +86,28 @@ export default function Profile(props: Props) {
                         whileInView={{ x: 0, opacity: 1 }}
                         viewport={{ once: false, amount: 0.5 }}
                         className='w-[600px] h-[700px] bg-(-bg) px-[60px] py-[50px] rounded-2xl'>
-                        <div className='text-(--text) text-[24px] font-semibold mb-[20px]'>Ваш психолог:</div>
+                        <div className='text-text text-[24px] font-semibold mb-[20px]'>Ваш психолог:</div>
                         <div className='flex gap-x-[20px] items-center mb-[20px]'>
                             <Image src={listPsychologist[profileActivePsychologist].imagePhoto} alt=''
                                 width={50} height={50} draggable='false' />
-                            <div className='text-(--text) text-[18px]'>{listPsychologist[profileActivePsychologist].name}</div>
+                            <div className='text-text text-[18px]'>{listPsychologist[profileActivePsychologist].name}</div>
                         </div>
                         <div className='flex gap-x-[30px] items-center mb-[40px]'>
                             <Link href='/messages'
                                 className='hover:scale-105 transition-transform duration-300 cursor-pointer w-[180px]
-                                h-[50px] text-white text-[18px] leading-[50px] text-center bg-(--color-btn-and-title) rounded-2xl'>
+                                h-[50px] text-white text-[18px] leading-[50px] text-center bg-btn-and-title rounded-2xl'>
                                 Связаться
                             </Link>
                             <div onClick={() => setShowChangePsychologist(true)}
                                 className='hover:scale-105 transition-transform duration-300 cursor-pointer w-[180px]
-                            h-[50px] text-(--color-btn-and-title) leading-[48px] text-center items-center
-                            text-[18px] border-2 border-(--color-btn-and-title) rounded-2xl'>Поменять</div>
+                            h-[50px] text-btn-and-title leading-[48px] text-center items-center
+                            text-[18px] border-2 border-btn-and-title rounded-2xl'>Поменять</div>
                         </div>
-                        <div className='text-(--text) text-[24px] font-semibold mb-[20px]'>Ближайшая сессия:</div>
+                        <div className='text-text text-[24px] font-semibold mb-[20px]'>Ближайшая сессия:</div>
                         <div className='flex gap-x-[20px] items-center mb-[20px]'>
                             <Image src={calendar} alt='' width={50} height={50} draggable='false' />
                             {globalActiveDay !== 0 ?
-                                <div className='text-(--text) text-[18px]'>
+                                <div className='text-text text-[18px]'>
                                     {globalActiveDay} {globalActiveMonth} в {globalActiveTime},
                                     {
                                         tariffPsychologist === 'faceToFace' ? ' в оченой форме' :
@@ -121,32 +121,32 @@ export default function Profile(props: Props) {
                             <div className='flex gap-x-[30px]'>
                                 <div onClick={clickChangeData}
                                     className='hover:scale-105 transition-transform duration-300 cursor-pointer w-[180px]
-                                    h-[50px] text-white text-[18px] leading-[50px] text-center bg-(--color-btn-and-title) rounded-2xl'>
+                                    h-[50px] text-white text-[18px] leading-[50px] text-center bg-btn-and-title rounded-2xl'>
                                     Перенести
                                 </div>
                                 <div onClick={() => setShowCanselData(true)}
                                     className='hover:scale-105 transition-transform duration-300 cursor-pointer w-[180px]
-                                    h-[50px] text-(--color-btn-and-title) text-[18px] leading-[48px] text-center
-                                    bg-white border-2 border-(--color-btn-and-title) rounded-2xl'>
+                                    h-[50px] text-btn-and-title text-[18px] leading-[48px] text-center
+                                    bg-white border-2 border-btn-and-title rounded-2xl'>
                                     Отменить
                                 </div>
                             </div> :
                             <div onClick={clickChooseData}
                                 className='hover:scale-105 transition-transform duration-300 cursor-pointer w-[230px]
-                                    h-[50px] text-white text-[18px] leading-[50px] text-center bg-(--color-btn-and-title)
+                                    h-[50px] text-white text-[18px] leading-[50px] text-center bg-btn-and-title
                                     rounded-2xl'>
                                 Выбрать время
                             </div>
                         }
                         <div className='flex items-center gap-x-[30px] mt-[50px] pt-[20px] border-t border-t-gray-400'>
-                            <div className='text-(--text) text-[20px] font-medium'>На счету:</div>
+                            <div className='text-text text-[20px] font-medium'>На счету:</div>
                             <div className='w-[170px] h-[50px] leading-[50px] text-center rounded-2xl
-                                text-[20px] text-white bg-(--color-btn-and-title)'>{formatNumberWithSpaceFromRight(youHaveBalance)} ₽</div>
+                                text-[20px] text-white bg-btn-and-title'>{formatNumberWithSpaceFromRight(youHaveBalance)} ₽</div>
                         </div>
                         <div className='flex items-center gap-x-[30px] mt-[30px]'>
-                            <div className='text-(--text) text-[20px] font-medium'>Оплачено сессий:</div>
+                            <div className='text-text text-[20px] font-medium'>Оплачено сессий:</div>
                             <div className='w-[170px] h-[50px] leading-[50px] text-center rounded-2xl
-                                text-[20px] text-white bg-(--color-btn-and-title)'>{youHavePaidSessions}</div>
+                                text-[20px] text-white bg-btn-and-title'>{youHavePaidSessions}</div>
                         </div>
                     </motion.div>
                     <motion.div

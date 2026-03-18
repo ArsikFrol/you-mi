@@ -26,7 +26,7 @@ export default function pageFreeTimePsychologist() {
     return (
         <>
             <Header white showNav />
-            <div className='text-(--color-btn-and-title) relative
+            <div className='text-btn-and-title relative
                 text-[40px] font-extrabold w-[1070px] mx-auto mb-[100px] mt-[50px]'>
                 <div className=''>Укажите дни и время, когда вы готовы проводить сессии</div>
                 <Image src={arrow} alt='' width={243} height={8} draggable='false'
@@ -34,8 +34,8 @@ export default function pageFreeTimePsychologist() {
             </div>
             <ChoiceFreeTime />
             <div className='w-[520px] mx-auto mb-[100px] flex justify-between'>
-                <div className='w-[240px] h-[60px] leading-[60px] text-center text-(--color-btn-and-title)
-                    border border-(--color-btn-and-title) rounded-2xl
+                <div className='w-[240px] h-[60px] leading-[60px] text-center text-btn-and-title
+                    border border-btn-and-title rounded-2xl
                     hover:scale-105 transition-transform duration-300 cursor-pointer'>Назад</div>
                 <div className='' onClick={() => setShowWarning(true)}>
                     <Btn textBtn="Сохранить" widht={240} />

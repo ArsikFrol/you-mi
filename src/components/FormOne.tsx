@@ -44,24 +44,24 @@ export default function FormOne() {
                     <Image className='absolute right-[35px] bottom-0' src={arrowFormOne} alt='' width={350}
                         height={11} draggable='false' />
                 </div>
-                <div className='w-[740px] text-center mx-auto text-(--text) text-[18px] font-medium'>
-                    <div>Анкета включает в себя <span className='font-bold text-(--color-btn-and-title)'>5 этапов.</span></div>
+                <div className='w-[740px] text-center mx-auto text-text text-[18px] font-medium'>
+                    <div>Анкета включает в себя <span className='font-bold text-btn-and-title'>5 этапов.</span></div>
                     Пожалуйста, ответьте на вопросы и приготовьте заранее сканы ваших дипломов и сертификатов, они понадобятся вам в ходе заполнения.
                 </div>
                 <div className='flex flex-col gap-y-[20px] w-[580px] mx-auto mt-[60px]'>
-                    <div className='text-(--color-btn-and-title) font-semibold text-[20px]'>
+                    <div className='text-btn-and-title font-semibold text-[20px]'>
                         <div className=''>Шаг 1</div>
                         <div className=''>Личные данные</div>
                     </div>
                     <div className=''>
-                        <div className='text-(--text) text-[16px] font-medium mb-[10px]'>ФИО</div>
+                        <div className='text-text text-[16px] font-medium mb-[10px]'>ФИО</div>
                         <Input oneTypeData='string' height={50} maxLength={100}
                             onChange={setFIO} value={FIO} placeholder='Иванова Анна Дмитриевна' width={580} />
                     </div>
                     <div className=''>
-                        <div className='text-(--text) text-[16px] font-medium mb-[10px]'>Пол</div>
-                        <div className='flex text-(--text) text-[16px] border-2
-                            border-(--color-btn-and-title) rounded-2xl h-[50px] w-[180px]'>
+                        <div className='text-text text-[16px] font-medium mb-[10px]'>Пол</div>
+                        <div className='flex text-text text-[16px] border-2
+                            border-btn-and-title rounded-2xl h-[50px] w-[180px]'>
                             <div onClick={() => setGender('муж')} style={{
                                 ...(gender === 'муж' ? {
                                     fontWeight: '600',
@@ -85,7 +85,7 @@ export default function FormOne() {
                         </div>
                     </div>
                     <div className=''>
-                        <div className='text-(--text) text-[16px] font-medium mb-[10px]'>Дата рождения</div>
+                        <div className='text-text text-[16px] font-medium mb-[10px]'>Дата рождения</div>
                         <div className='flex gap-x-[15px]'>
                             <Input oneTypeData='number' height={50} maxLength={2}
                                 onChange={setDayBirth} value={dayBirth} placeholder='01' width={70} textCenter />
@@ -96,34 +96,34 @@ export default function FormOne() {
                         </div>
                     </div>
                     <div className=''>
-                        <div className='text-(--text) text-[16px] font-medium mb-[10px]'>Гражданство</div>
+                        <div className='text-text text-[16px] font-medium mb-[10px]'>Гражданство</div>
                         <Input oneTypeData='string' height={50}
                             maxLength={100} onChange={setCitizenship} value={citizenship} placeholder='' width={580} />
                     </div>
                     <div className=''>
-                        <div className='text-(--text) text-[16px] font-medium mb-[10px]'>Страна и город проживания</div>
+                        <div className='text-text text-[16px] font-medium mb-[10px]'>Страна и город проживания</div>
                         <Input oneTypeData='string' height={50}
                             maxLength={100} onChange={setCountry} value={country} placeholder='' width={580} />
                     </div>
                     <div className=''>
-                        <div className='text-(--text) text-[16px] font-medium mb-[10px]'>Номер телефона для связи</div>
+                        <div className='text-text text-[16px] font-medium mb-[10px]'>Номер телефона для связи</div>
                         <Input height={50} oneTypeData='number' maxLength={100}
                             onChange={setNumberPhone} value={numberPhone} placeholder='+7 (___)' width={580} />
                     </div>
                     <div className=''>
-                        <div className='text-(--text) text-[16px] font-medium mb-[10px]'>Электронная почта</div>
+                        <div className='text-text text-[16px] font-medium mb-[10px]'>Электронная почта</div>
                         <Input height={50} maxLength={100}
                             onChange={setEmail} value={email} placeholder='' width={580} />
                     </div>
                     <div className=''>
-                        <div className='text-(--text) text-[16px] font-medium mb-[10px]'>Социальные сети</div>
+                        <div className='text-text text-[16px] font-medium mb-[10px]'>Социальные сети</div>
                         <textarea value={socialNetwork} onChange={(e) => setSocialNetwork(e.target.value)} rows={1} className='p-[10px] w-[580px] h-[100px]
-                            border-2 border-(--color-btn-and-title) outline-none rounded-2xl'>
+                            border-2 border-btn-and-title outline-none rounded-2xl'>
                         </textarea>
                     </div>
                 </div>
                 <div className='w-[580px] mx-auto'>
-                    <div className='w-[480px] text-(--text) text-[14px] font-light'>Страницы в социальных сетях, личный сайт, блог, упоминание на сайтах конференций или профессиональных ассоциаций.</div>
+                    <div className='w-[480px] text-text text-[14px] font-light'>Страницы в социальных сетях, личный сайт, блог, упоминание на сайтах конференций или профессиональных ассоциаций.</div>
                 </div>
             </>
         </Container>

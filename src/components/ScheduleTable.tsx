@@ -26,7 +26,7 @@ export default function ScheduleTable() {
                         columnListTime.map((timeElem, index: number) => {
                             return (
                                 <div className="text-center h-[100px] leading-[100px]
-                                    text-[18px] text-(--color-btn-and-title) font-semibold" key={index}>{timeElem}</div>
+                                    text-[18px] text-btn-and-title font-semibold" key={index}>{timeElem}</div>
                             )
                         })
                     }

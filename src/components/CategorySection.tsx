@@ -40,7 +40,7 @@ export default function CategorySection(props: Props) {
                                     initial={{ x: -200, opacity: 0 }}
                                     whileInView={{ x: 0, opacity: 1 }}
                                     viewport={{ once: false, amount: 0.5 }} className=''>
-                                    <Link href={`${backPage}/${obj.id}`} className="w-[360px] text-(--text)cursor-pointer hover:scale-105 transition-transform duration-300" key={index}>
+                                    <Link href={`${backPage}/${obj.id}`} className="w-[360px] text-textcursor-pointer hover:scale-105 transition-transform duration-300" key={index}>
                                         <Image src={obj.imageSection} alt='' width={360} height={170} draggable='false' />
                                         <div className='text-[20px] font-semibold my-[10px]'>{obj.titleSection}</div>
                                         <div className='text-[18px]'>{obj.smallDesc}</div>

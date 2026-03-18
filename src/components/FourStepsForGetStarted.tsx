@@ -130,8 +130,8 @@ export default function FourStepsForGetStarted() {
                                         className="absolute left-[20px] -top-[30px]" src={bg} alt=''
                                         width={178} height={160} draggable='false' />
                                     <div style={{ width: `${obj.widthText}px`, textAlign: 'left' }} className='relative z-10'>
-                                        <div className='text-(--text) text-[24px] font-semibold'>{obj.title}</div>
-                                        <div className='text-(--text) text-[18px]'>{obj.desc}</div>
+                                        <div className='text-text text-[24px] font-semibold'>{obj.title}</div>
+                                        <div className='text-text text-[18px]'>{obj.desc}</div>
                                     </div>
                                     <Image style={obj.id == 1 ?
                                         { display: 'none' } :

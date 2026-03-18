@@ -23,15 +23,15 @@ export default function FormSelectionTwo() {
     return (
         <div className='w-[580px] mx-auto mb-[30px]'>
             <div className=''>
-                <div className='text-(--text) text-[18px] font-medium'>Расскажите о себе</div>
-                <div className='text-(--text) text-[14px] font-light mb-[30px]'>Данные нужны для создания личного кабинета</div>
+                <div className='text-text text-[18px] font-medium'>Расскажите о себе</div>
+                <div className='text-text text-[14px] font-light mb-[30px]'>Данные нужны для создания личного кабинета</div>
             </div>
             <div className='mb-[30px]'>
-                <div className='text-(--text) text-[18px] font-medium mb-[10px]'>Имя</div>
+                <div className='text-text text-[18px] font-medium mb-[10px]'>Имя</div>
                 <Input height={50} maxLength={100} placeholder="" width={480} value={name} onChange={setName} />
             </div>
             <div className='mb-[30px]'>
-                <div className='text-(--text) text-[18px] font-medium mb-[10px]'>Дата рождения</div>
+                <div className='text-text text-[18px] font-medium mb-[10px]'>Дата рождения</div>
                 <div className='flex gap-x-[20px]'>
                     <Input oneTypeData="number" height={50} maxLength={2} value={dayBirth}
                         onChange={setDayBirth} placeholder="01" width={70} textCenter />
@@ -42,12 +42,12 @@ export default function FormSelectionTwo() {
                 </div>
             </div>
             <div className='mb-[30px]'>
-                <div className='text-(--text) text-[18px] font-medium mb-[10px]'>Номер телефона</div>
+                <div className='text-text text-[18px] font-medium mb-[10px]'>Номер телефона</div>
                 <Input oneTypeData="numberPhone" height={50} maxLength={15} value={numberPhone}
                     onChange={setNumberPhone} placeholder="+7 ( ___ )" width={480} />
             </div>
             <div className=''>
-                <div className='text-(--text) text-[18px] font-medium mb-[10px]'>Электронная почта</div>
+                <div className='text-text text-[18px] font-medium mb-[10px]'>Электронная почта</div>
                 <Input height={50} maxLength={100} value={email} onChange={setEmail}
                     placeholder="" width={480} oneTypeData="email" />
             </div>

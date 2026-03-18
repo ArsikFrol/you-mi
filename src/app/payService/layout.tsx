@@ -160,7 +160,7 @@ function FormLayoutContent({ children }: { children: React.ReactNode }) {
                                 <Link key={obj.id} style={{ width: `${obj.width}px` }}
                                     href={obj.id === 4 ? '/payService' : '/formSelectionPsychologist/' + obj.link}
                                     className='block text-center h-[50px] leading-[50px] text-white text-[20px]
-                                    font-semibold bg-(--color-btn-and-title) rounded-3xl transition-all
+                                    font-semibold bg-btn-and-title rounded-3xl transition-all
                                     duration-300 cursor-pointer hover:scale-105 opacity-100'>
                                     {obj.text}
                                 </Link>
@@ -174,7 +174,7 @@ function FormLayoutContent({ children }: { children: React.ReactNode }) {
             </>
             <div className='flex gap-x-[50px] items-center w-[500px] mx-auto mt-[50px]'>
                 <div onClick={clickBack} className='transition-transform hover:scale-105
-                    duration-300 cursor-pointer w-[220px] border border-(--color-btn-and-title) h-[60px] leading-[60px]
+                    duration-300 cursor-pointer w-[220px] border border-btn-and-title h-[60px] leading-[60px]
                     text-center rounded-2xl'>Назад</div>
                 <div className='w-[230px]' onClick={payToast}>
                     <Btn textBtn='Оплатить' widht={220} />

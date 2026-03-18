@@ -16,7 +16,7 @@ export default function TopContentWebinars(props: Props) {
                 <div className='flex justify-between'>
                     <div className='flex gap-x-[20px] items-center'>
                         <div onClick={() => setActiveBtn('upcomingOnes')}
-                            className='text-(--text) text-[24px] font-medium px-[20px] leading-[50px] rounded-2xl
+                            className='text-text text-[24px] font-medium px-[20px] leading-[50px] rounded-2xl
                                 hover:scale-105 transition-transform duration-300 cursor-pointer'
                             style={{
                                 ...(activeBtn === 'upcomingOnes' ? { background: 'rgba(120, 114, 185, 1)', color: 'white' } : {})
@@ -24,7 +24,7 @@ export default function TopContentWebinars(props: Props) {
                             Предстоящие
                         </div>
                         <div onClick={() => setActiveBtn('archive')}
-                            className='text-(--text) text-[24px] font-medium px-[20px] leading-[50px] rounded-2xl
+                            className='text-text text-[24px] font-medium px-[20px] leading-[50px] rounded-2xl
                                 hover:scale-105 transition-transform duration-300 cursor-pointer'
                             style={{
                                 ...(activeBtn === 'archive' ? { background: 'rgba(120, 114, 185, 1)', color: 'white' } : {})

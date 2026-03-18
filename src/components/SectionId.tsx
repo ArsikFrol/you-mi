@@ -38,9 +38,9 @@ export default function SectionId(props: Props) {
                 <div className='w-[1080px] mx-auto pt-[100px]'>
                     <Title text='Как побороть тревогу?' />
                     <Image className='rounded-2xl mb-[50px]' src={sectionId} alt='' width={1080} height={540} draggable='false' />
-                    <div className='text-(--text) text-[22px]'>{renderTextWithBreaks(props.objElem.bigDesc)}</div>
+                    <div className='text-text text-[22px]'>{renderTextWithBreaks(props.objElem.bigDesc)}</div>
                 </div>
-                <div className='text-(--text) text-[20px] flex justify-between mt-[80px] w-[1080px] mx-auto'>
+                <div className='text-text text-[20px] flex justify-between mt-[80px] w-[1080px] mx-auto'>
                     <div className='font-semibold'>{props.objElem.author}</div>
                     <div className=''>{props.objElem.date}</div>
                 </div>

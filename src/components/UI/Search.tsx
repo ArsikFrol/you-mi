@@ -32,7 +32,7 @@ export default function Search(props: Props) {
     return (
         <>
             {hideSearch ?
-                <div className='relative text-(--text) text-[18px] font-medium group'
+                <div className='relative text-text text-[18px] font-medium group'
                     onClick={() => clickInput()}>
                     <input style={{
                         ...(showSearch ? { width: '420px' } : { cursor: 'pointer' })
@@ -48,7 +48,7 @@ export default function Search(props: Props) {
                         }}
                         src={magnifier} alt='' width={22} height={22} draggable='false' />
                 </div> :
-                <div className='relative text-(--text) text-[18px] font-medium group'>
+                <div className='relative text-text text-[18px] font-medium group'>
                     <input type="text"
                         onChange={(e) => setValumeInput(e.target.value)}
                         value={valumeInput}

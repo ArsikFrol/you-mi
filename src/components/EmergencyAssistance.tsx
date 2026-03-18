@@ -23,10 +23,10 @@ export default function EmergencyAssistance() {
             lg:w-[960px]
             md:w-[690px]
             sm:max-md:mx-[30px]">
-            <div className="mb-5 text-(--color-btn-and-title) font-extrabold
+            <div className="mb-5 text-btn-and-title font-extrabold
                 md:text-[40px]
                 max-md:text-[35px]">Экстренная помощь</div>
-            <div className="mb-7.5 text-(--text)
+            <div className="mb-7.5 text-text
                 xl:w-[780px]
                 max-xl:md:w-[550px]
                 md:text-[20px] max-md:text-[18px]">Если вам необходима
@@ -40,7 +40,7 @@ export default function EmergencyAssistance() {
                     {
                         listElemLeft.map((obj: { id: number, tel: string, desc: string }, index: number) => {
                             return (
-                                <div className="text-(--text) flex flex-col gap-y-[5px]" key={index}>
+                                <div className="text-text flex flex-col gap-y-[5px]" key={index}>
                                     <div className="font-semibold
                                         md:text-[24px]
                                         max-md:text-[20px]">{obj.tel}</div>
@@ -54,7 +54,7 @@ export default function EmergencyAssistance() {
                     {
                         listElemRight.map((obj: { id: number, tel: string, desc: string }, index: number) => {
                             return (
-                                <div className="text-(--text) flex flex-col gap-y-[5px]" key={index}>
+                                <div className="text-text flex flex-col gap-y-[5px]" key={index}>
                                     <div className="font-semibold
                                         md:text-[24px]
                                         max-md:text-[20px]">{obj.tel}</div>

@@ -18,11 +18,11 @@ export default function YouMiTogether() {
                     whileInView={{ opacity: 1 }}
                     viewport={{ once: false, amount: 0.5 }}
                     transition={{ duration: 0.7, type: "spring", stiffness: 50 }}
-                    className="text-[44px] text-(--color-btn-and-title) font-extrabold w-[640px] relative
+                    className="text-[44px] text-btn-and-title font-extrabold w-[640px] relative
                         sm:max-lg:text-center">
                     В YouMi вы не одни
                     Вместе мы справимся
-                    <Image className="absolute 
+                    <Image className="absolute
                         lg:bottom-[-15px] lg:left-[-25px]
                         sm:max-lg:top-[58px] sm:max-lg:left-[20px]" src={border} alt=''
                         width={222} height={85} draggable='false' />

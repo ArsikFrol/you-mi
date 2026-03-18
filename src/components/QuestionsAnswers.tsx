@@ -40,25 +40,25 @@ export default function QuestionsAnswers() {
                                     whileInView={{ x: 0, opacity: 1 }}
                                     viewport={{ once: false, amount: 0.5 }}
                                     transition={{ duration: 0.7, type: "spring", stiffness: 50 }}
-                                    className="group hover:scale-105 transition-transform duration-300 
+                                    className="group hover:scale-105 transition-transform duration-300
                                     cursor-pointer relative bg-blue-50 p-[50px] rounded-2xl"
                                     onClick={() => clickShowElem(obj.id)}
                                     key={index}>
                                     <div className='flex justify-between items-start gap-x-[20px]'>
-                                        <div className="mb-2.5 text-(--text) text-[20px] font-semibold">
+                                        <div className="mb-2.5 text-text text-[20px] font-semibold">
                                             {obj.title}
                                         </div>
                                         <Image className="
                                             group-hover:rotate-180 transition-transform duration-900 cursor-pointer"
-                                            src={obj.id === showElem ? minus : plus} alt='' 
+                                            src={obj.id === showElem ? minus : plus} alt=''
                                             width={40} height={40} draggable='false' />
                                     </div>
-                                    <div className={`overflow-hidden transition-all duration-500 ease-in-out 
+                                    <div className={`overflow-hidden transition-all duration-500 ease-in-out
                                         ${obj.id === showElem
                                             ? 'max-h-[500px] opacity-100 mt-4'
                                             : 'max-h-0 opacity-0'
                                         }`}>
-                                        <div className="text-(--text) text-[18px] pt-2">
+                                        <div className="text-text text-[18px] pt-2">
                                             {obj.desc}
                                         </div>
                                     </div>

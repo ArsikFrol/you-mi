@@ -58,9 +58,9 @@ export default function FreeTimePsychologist(props: Props) {
                             return (
                                 <div onClick={() => props.clickTime(time)}
                                     className="hover:scale-105 transition-transform duration-300 cursor-pointer
-                                                    w-[110px] h-[40px] leading-[40px] text-center 
-                                                    border-2 border-(--color-btn-and-title) rounded-[10px] 
-                                                    text-[18px] text-(--color-btn-and-title) mx-auto"
+                                                    w-[110px] h-[40px] leading-[40px] text-center
+                                                    border-2 border-btn-and-title rounded-[10px]
+                                                    text-[18px] text-btn-and-title mx-auto"
                                     style={{
                                         ...(globalActiveDay === props.activeIdDay &&
                                             time === globalActiveTime ? {
@@ -92,9 +92,9 @@ export default function FreeTimePsychologist(props: Props) {
                             return (
                                 <div onClick={() => props.clickTime(time)}
                                     className="hover:scale-105 transition-transform duration-300 cursor-pointer
-                                                            w-[110px] h-[40px] leading-[40px] text-center 
-                                                            border-2 border-(--color-btn-and-title) rounded-[10px] 
-                                                            text-[18px] text-(--color-btn-and-title) mx-auto"
+                                                            w-[110px] h-[40px] leading-[40px] text-center
+                                                            border-2 border-btn-and-title rounded-[10px]
+                                                            text-[18px] text-btn-and-title mx-auto"
                                     style={{
                                         ...(props.activeFreeTime === time ? {
                                             background: 'rgba(120, 114, 185, 1)',

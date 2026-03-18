@@ -83,23 +83,23 @@ export default function FourStepsForMeeting() {
                                     className={`relative flex justify-between
                                         ${width && width < 730 ? 'w-[360px] mx-auto' : ''}
                                         `}>
-                                    <div style={obj.id == 2 || obj.id == 4 ? { order: 2 } : {}} 
-                                        className={`flex items-center 
+                                    <div style={obj.id == 2 || obj.id == 4 ? { order: 2 } : {}}
+                                        className={`flex items-center
                                             lg:gap-x-[50px]
                                             ${width && width < 730 && obj.id === 1 ? 'gap-x-[30px]' : 'gap-x-[20px]'}`}>
-                                        <Image src={obj.count} alt='' width={obj.widhtCount} height={100} 
-                                            draggable='false' className={`relative z-10 w-auto 
+                                        <Image src={obj.count} alt='' width={obj.widhtCount} height={100}
+                                            draggable='false' className={`relative z-10 w-auto
                                                 lg:h-[100px]
                                                 md:h-[90px]
                                                 ${width && width < 730 && obj.id === 1 ? 'pl-[30px]' : ''}`} />
                                         <Image loading="eager" style={obj.id == 2 || obj.id == 4 ? {} : { left: '30px' }}
-                                            src={bgCount} alt='' width={166} 
-                                            height={160} draggable='false' className='absolute 
+                                            src={bgCount} alt='' width={166}
+                                            height={160} draggable='false' className='absolute
                                                 lg:w-[166px] lg:h-[160px]
                                                 md:w-[130px] h-[130px]'/>
                                         <div className="relative flex flex-col gap-y-[5px]">
-                                            <div className="text-(--text) text-[24px] font-semibold">{obj.title}</div>
-                                            <div className="text-(--text)font-normal
+                                            <div className="text-text text-[24px] font-semibold">{obj.title}</div>
+                                            <div className="text-textfont-normal
                                                 xl:text-[20px] xl:w-[390px]
                                                 lg:text-[18px] lg:w-[300px]
                                                 md:text-[15px] md:w-[220px]
@@ -108,7 +108,7 @@ export default function FourStepsForMeeting() {
                                             </div>
                                         </div>
                                     </div>
-                                    <Image src={obj.img} alt='' width={488} height={210} draggable='false' 
+                                    <Image src={obj.img} alt='' width={488} height={210} draggable='false'
                                         className={`h-auto
                                             xl:w-[488px]
                                             lg:w-[438px]
@@ -126,15 +126,15 @@ export default function FourStepsForMeeting() {
                         whileInView={{ x: 0, opacity: 1 }}
                         viewport={{ once: false, amount: 0.5 }}
                         transition={{ duration: 0.7, type: "spring", stiffness: 50 }}
-                        className={`relative flex items-center 
+                        className={`relative flex items-center
                             md:gap-x-[20px]
                             sm:gap-x-[5px]
                             ${width && width < 730 ? 'hidden' : ''}`}>
-                        <Image className="relative z-10" src={calendarMini} alt='' width={100} 
+                        <Image className="relative z-10" src={calendarMini} alt='' width={100}
                             height={100} draggable='false' />
-                        <Image className="absolute left-[50px]" src={bgCalendarMini} alt='' 
+                        <Image className="absolute left-[50px]" src={bgCalendarMini} alt=''
                             width={104} height={98} draggable='false' />
-                        <div className="relative z-10 text-(--text)
+                        <div className="relative z-10 text-text
                             lg:w-[312px]
                             md:w-[220px] md:text-[20px]
                             sm:text-[17px] sm:w-[250px]">
@@ -150,7 +150,7 @@ export default function FourStepsForMeeting() {
                                 ${width && width < 1024 ? 'max-lg:w-[320px]' : ''}
                                 ${width && width < 730 ? 'mx-auto' : ''}
                             `}>
-                        <Btn scroll link="/formSelectionPsychologist/one" textBtn="Сделать первый шаг" 
+                        <Btn scroll link="/formSelectionPsychologist/one" textBtn="Сделать первый шаг"
                             widht={width && width < 1024 ? 310 : 410} />
                     </motion.div>
                 </div>

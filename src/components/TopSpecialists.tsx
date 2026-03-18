@@ -76,7 +76,7 @@ export default function TopSpecialists() {
                                     {...animProps}
                                     whileInView={{ x: 0, y: 0, opacity: 1 }}
                                     viewport={{ once: false, amount: 0.5 }}
-                                    className="flex flex-col items-center text-(--text)">
+                                    className="flex flex-col items-center text-text">
                                     <Image src={obj.image} alt='' width={220} height={220} draggable='false' />
                                     <div className="text-[24px] font-semibold">{obj.name}</div>
                                     <div className="text-[18px]">{obj.desc}</div>

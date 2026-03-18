@@ -66,13 +66,13 @@ export default function WarningWindow(props: Props) {
         <div className='w-full h-full bg-[rgba(74,70,117,0.6)]
             left-0 top-0 flex items-center z-100 fixed'>
             <div className='relative w-[580px] bg-[rgba(249,252,255,1)] rounded-2xl px-[100px] py-[50px] mx-auto z-100'>
-                <div className='w-[380px] mx-auto text-(--text) text-[24px] font-medium text-center'>{props.text}</div>
+                <div className='w-[380px] mx-auto text-text text-[24px] font-medium text-center'>{props.text}</div>
                 <div className='flex justify-between w-[350px] mx-auto mt-[40px]'>
                     <div onClick={clickYes} className='text-white w-[150px] h-[50px]
-                    leading-[50px] text-center bg-(--color-btn-and-title)
+                    leading-[50px] text-center bg-btn-and-title
                     hover:scale-105 transition-transform duration-300 cursor-pointer rounded-2xl'>Да</div>
                     <div onClick={clickNo} className='text-white w-[150px] h-[50px]
-                    leading-[50px] text-center bg-(--color-btn-and-title)
+                    leading-[50px] text-center bg-btn-and-title
                     hover:scale-105 transition-transform duration-300 cursor-pointer rounded-2xl'>Нет</div>
                 </div>
                 <Image onClick={() => props.setShowWarning(false)}

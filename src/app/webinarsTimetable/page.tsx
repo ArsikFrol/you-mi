@@ -57,7 +57,7 @@ export default function webinarsTimetable() {
             </div>
             <Container>
                 <>
-                    <div className='text-(--text) text-[30px] mb-[40px] font-medium'>Ваши записи на вебинары: </div>
+                    <div className='text-text text-[30px] mb-[40px] font-medium'>Ваши записи на вебинары: </div>
                     <div className='grid grid-cols-3 gap-y-[50px]'>
                         {
                             webinarEntries.map((obj, index: number) => {
@@ -68,10 +68,10 @@ export default function webinarsTimetable() {
                                             <Image className='mx-auto py-[10px]'
                                                 src={obj.smallImage} alt='' width={274} height={274} draggable='false' />
                                         </div>
-                                        <div className='text-(--text) text-[24px] font-semibold mb-[10px]'>{obj.title}</div>
-                                        <div className='text-(--text) text-[18px] mb-[10px]'>{obj.smallDesc}</div>
-                                        <div className='text-(--color-btn-and-title) text-[18px] font-bold mb-[10px]'>{obj.dateStart}</div>
-                                        <div className='text-(--text) text-[20px] mb-[14px] font-semibold'>{obj.author}</div>
+                                        <div className='text-text text-[24px] font-semibold mb-[10px]'>{obj.title}</div>
+                                        <div className='text-text text-[18px] mb-[10px]'>{obj.smallDesc}</div>
+                                        <div className='text-btn-and-title text-[18px] font-bold mb-[10px]'>{obj.dateStart}</div>
+                                        <div className='text-text text-[20px] mb-[14px] font-semibold'>{obj.author}</div>
                                         <div className={`text-[18px] w-[150px] text-center rounded-2xl
                                             h-[40px] leading-[40px] mx-auto
                                             ${obj.price === 0 || obj.payment ? '' : 'hover:scale-105 transition-transform duration-300 cursor-pointer'}`}

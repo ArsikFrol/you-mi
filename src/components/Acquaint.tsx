@@ -23,7 +23,7 @@ export default function Acquaint(props: Props) {
         <div className='mt-[100px]'>
             <Container purple rounded >
                 <div className='px-[50px]'>
-                    <div className='grid grid-cols-4 text-center text-[18px] text-(--text)font-medium
+                    <div className='grid grid-cols-4 text-center text-[18px] text-textfont-medium
                                             justify-between mb-[50px]'>
                         <div onClick={() => props.setActiveAcquaint('aboutMe')}
                             style={{
@@ -68,12 +68,12 @@ export default function Acquaint(props: Props) {
                     </div>
                     {props.activeAcquaint === 'aboutMe' &&
                         <>
-                            <div className='text-(--text) text-[24px] font-semibold mb-[30px]'>О себе</div>
+                            <div className='text-text text-[24px] font-semibold mb-[30px]'>О себе</div>
                             <div className='flex flex-col gap-y-[10px]'>
                                 {
                                     listPsychologist[activePsychologist].aboutMe.split('<br />').map((part: string, index: number) => {
                                         return (
-                                            <div className="text-(--text) text-[18px]" key={index}>{part}</div>
+                                            <div className="text-text text-[18px]" key={index}>{part}</div>
                                         )
                                     })
                                 }
@@ -85,12 +85,12 @@ export default function Acquaint(props: Props) {
                     }
                     {props.activeAcquaint === 'education' &&
                         <>
-                            <div className='text-(--text) text-[24px] font-semibold mb-[30px]'>Образование</div>
+                            <div className='text-text text-[24px] font-semibold mb-[30px]'>Образование</div>
                             <div className='flex flex-col gap-y-[10px]'>
                                 {
                                     listPsychologist[activePsychologist].education.split('<br />').map((part: string, index: number) => {
                                         return (
-                                            <div className="text-(--text) text-[18px]" key={index}>{part}</div>
+                                            <div className="text-text text-[18px]" key={index}>{part}</div>
                                         )
                                     })
                                 }
@@ -102,12 +102,12 @@ export default function Acquaint(props: Props) {
                     }
                     {props.activeAcquaint === 'approachesToWork' &&
                         <>
-                            <div className='text-(--text) text-[24px] font-semibold mb-[30px]'>Подходы в работе</div>
+                            <div className='text-text text-[24px] font-semibold mb-[30px]'>Подходы в работе</div>
                             <div className='flex flex-col gap-y-[10px]'>
                                 {
                                     listPsychologist[activePsychologist].approachesToWork.split('<br />').map((part: string, index: number) => {
                                         return (
-                                            <div className="text-(--text) text-[18px]" key={index}>{part}</div>
+                                            <div className="text-text text-[18px]" key={index}>{part}</div>
                                         )
                                     })
                                 }
@@ -119,11 +119,11 @@ export default function Acquaint(props: Props) {
                     }
                     {props.activeAcquaint === 'tariffs' &&
                         <>
-                            <div className='text-(--text) text-[24px] font-semibold mb-[30px]'>Тарифы работы с психологом</div>
+                            <div className='text-text text-[24px] font-semibold mb-[30px]'>Тарифы работы с психологом</div>
                             <div className='flex flex-col gap-y-[20px]'>
-                                <div className='text-(--text) text-[22px]'>Очная встреча - {listPsychologist[activePsychologist].tariffsWork.faceToFace} ₽</div>
-                                <div className='text-(--text) text-[22px]'>Онлайн созвон - {listPsychologist[activePsychologist].tariffsWork.online} ₽</div>
-                                <div className='text-(--text) text-[22px]'>Очная встреча с семьей - {listPsychologist[activePsychologist].tariffsWork.withFamilies} ₽</div>
+                                <div className='text-text text-[22px]'>Очная встреча - {listPsychologist[activePsychologist].tariffsWork.faceToFace} ₽</div>
+                                <div className='text-text text-[22px]'>Онлайн созвон - {listPsychologist[activePsychologist].tariffsWork.online} ₽</div>
+                                <div className='text-text text-[22px]'>Очная встреча с семьей - {listPsychologist[activePsychologist].tariffsWork.withFamilies} ₽</div>
                             </div>
                             <div className='w-[370px] mx-auto mt-[50px]'>
                                 <Btn textBtn='Пообщаться с психологом' widht={360} link='/messages' />

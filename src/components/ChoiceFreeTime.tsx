@@ -35,7 +35,7 @@ export default function ChoiceFreeTime() {
                         return (
                             <div className='flex flex-col gap-y-[20px]' key={index}>
                                 <div className="w-[117px] text-center mx-auto text-[18px]
-                                    font-semibold text-(--color-btn-and-title) h-[40px] leading-[40px]"
+                                    font-semibold text-btn-and-title h-[40px] leading-[40px]"
                                     style={{
                                         ...(dayNow === (index + 1 + plusCount) ? {
                                             background: 'rgba(120, 114, 185, 1)',

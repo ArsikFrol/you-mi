@@ -53,20 +53,20 @@ export default function CartSelectionThree(props: Props) {
                 <Image className=''
                     src={listPsychologist[activePsychologist].bigImage} alt='' width={280} height={280} draggable='false' />
                 <div className=''>
-                    <div className='text(--text) text-[26px] font-semibold flex gap-x-[20px] items-center'>
+                    <div className='texttext text-[26px] font-semibold flex gap-x-[20px] items-center'>
                         <span>{listPsychologist[activePsychologist].name}</span>
                         {profileActivePsychologist === activePsychologist &&
                             <span className="text-neutral-400 text-[20px]">(ваш психолог)</span>
                         }
                     </div>
-                    <div className='text(--text) text-[20px] mb-[20px]'>{listPsychologist[activePsychologist].workExperience}</div>
-                    <div className='text(--text) text-[20px] font-medium mb-[10px]'>Работает с запросами:</div>
+                    <div className='texttext text-[20px] mb-[20px]'>{listPsychologist[activePsychologist].workExperience}</div>
+                    <div className='texttext text-[20px] font-medium mb-[10px]'>Работает с запросами:</div>
                     <div className='flex flex-col gap-y-[10px] mb-[30px]'>
                         {
                             listPsychologist[activePsychologist].worksWithQueries.map((elem: string, index: number) => {
                                 return (
                                     <div className="h-[40px] w-[480px] leading-[40px] text-white text-[16px] font-semibold
-                                                        rounded-2xl bg-(--color-btn-and-title) text-center"
+                                                        rounded-2xl bg-btn-and-title text-center"
                                         key={index}>{elem}</div>
                                 )
                             })
@@ -87,10 +87,10 @@ export default function CartSelectionThree(props: Props) {
                     </div>
                 </div>
                 <div className=''>
-                    <div className='text(--text) text-[18px] font-medium mb-[5px]'>
+                    <div className='texttext text-[18px] font-medium mb-[5px]'>
                         Ближайший свободный слот:
                     </div>
-                    <div className='text-(--color-btn-and-title) 
+                    <div className='text-btn-and-title
                             text-[18px] font-bold mb-[30px]'>
                         <span>
                             {listPsychologist[activePsychologist].freeDays.now.find(day => day.status === 'free' && dayNow <= day.id)?.id}
@@ -106,8 +106,8 @@ export default function CartSelectionThree(props: Props) {
                     </div>
                     <div className='flex gap-x-[50px] items-center'>
                         <div onClick={() => clickAcquaintBtn()}
-                            className='rounded-2xl w-[320px] h-[60px] leading-[60px] border-2 border-(--color-btn-and-title)
-                                                text-[20px] text-(--color-btn-and-title) font-semibold hover:scale-105 
+                            className='rounded-2xl w-[320px] h-[60px] leading-[60px] border-2 border-btn-and-title
+                                                text-[20px] text-btn-and-title font-semibold hover:scale-105
                                                 transition-transform duration-300 cursor-pointer text-center'>
                             Познакомиться ближе
                         </div>

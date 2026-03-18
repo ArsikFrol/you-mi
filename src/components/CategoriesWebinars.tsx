@@ -38,8 +38,8 @@ export default function CategoriesWebinars(props: Props) {
                                         <Image className='mx-auto py-[10px]'
                                             src={obj.smallImage} alt='' width={274} height={274} draggable='false' />
                                     </div>
-                                    <div className='text-(--text) text-[24px] font-semibold mb-[10px]'>{obj.title}</div>
-                                    <div className='text-(--text) text-[18px]'>{obj.smallDesc}</div>
+                                    <div className='text-text text-[24px] font-semibold mb-[10px]'>{obj.title}</div>
+                                    <div className='text-text text-[18px]'>{obj.smallDesc}</div>
                                 </Link>
                             </motion.div>
                         )
@@ -57,16 +57,16 @@ export default function CategoriesWebinars(props: Props) {
                                     <Image className='mx-auto py-[10px]'
                                         src={obj.smallImage} alt='' width={274} height={274} draggable='false' />
                                 </div>
-                                <div className='flex items-center justify-between text-(--text) text-[18px] mb-[10px]'>
+                                <div className='flex items-center justify-between text-text text-[18px] mb-[10px]'>
                                     <div className=''>Онлайн</div>
                                     <div className='font-semibold h-[40px] leading-[40px] bg-[rgba(235,245,255,1)]
                                         px-[20px] rounded-2xl'>
                                         {obj.price ? `${obj.price} руб.` : 'Басплатно'}
                                     </div>
                                 </div>
-                                <div className='text-(--text) text-[24px] font-semibold mb-[10px]'>{obj.title}</div>
-                                <div className='text-(--text) text-[18px] mb-[15px]'>{obj.smallDesc}</div>
-                                <div className='text-(--color-btn-and-title) text-[18px] font-bold mb-[20px]'>{obj.dateStart}</div>
+                                <div className='text-text text-[24px] font-semibold mb-[10px]'>{obj.title}</div>
+                                <div className='text-text text-[18px] mb-[15px]'>{obj.smallDesc}</div>
+                                <div className='text-btn-and-title text-[18px] font-bold mb-[20px]'>{obj.dateStart}</div>
                                 <div className='w-[290px] mx-auto mb-[15px]'>
                                     <Btn textBtn='Записаться' widht={280} link={`/webinars/${activeBtn}/${obj.id}`} />
                                 </div>

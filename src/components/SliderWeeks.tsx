@@ -34,7 +34,7 @@ export default function SliderWeeks(props: Props) {
                         : ''
                     } />
             </div>
-            <div className='text-[18px] font-semibold text-(--color-btn-and-title)'>
+            <div className='text-[18px] font-semibold text-btn-and-title'>
                 {1 + props.plusCount}-{7 + props.plusCount} {listMonthGenitiveCase[monthNow]}
             </div>
             <div onClick={clickRigth}

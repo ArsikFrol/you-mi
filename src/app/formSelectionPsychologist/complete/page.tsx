@@ -33,10 +33,10 @@ export default function () {
     return (
         <>
             <div className='w-[980px] bg-(-bg) rounded-2xl py-[50px] px-[100px] my-[100px] mx-auto'>
-                <div className='text-(--color-btn-and-title) text-[40px] font-extrabold mb-[30px]'>За вами закреплено время сессии</div>
+                <div className='text-btn-and-title text-[40px] font-extrabold mb-[30px]'>За вами закреплено время сессии</div>
                 <div className='flex gap-x-[10px] items-center mb-[20px]'>
                     <Image src={calendar} alt='' width={50} height={50} draggable='false' />
-                    <div className='text-(--text) text-[24px] font-medium'>
+                    <div className='text-text text-[24px] font-medium'>
                         {globalActiveDay} {globalActiveMonth} в {globalActiveTime},
                         {
                             tariffPsychologist === 'faceToFace' ? ' в оченой форме' :
@@ -46,7 +46,7 @@ export default function () {
                 </div>
                 <div className='flex gap-x-[10px] items-center mb-[30px]'>
                     <Image src={listPsychologist[activePsychologist].imagePhoto} alt='' width={50} height={50} draggable='false' />
-                    <div className='text-(--text) text-[24px] font-medium'>Ваш психотерапевт: {listPsychologist[activePsychologist].name}</div>
+                    <div className='text-text text-[24px] font-medium'>Ваш психотерапевт: {listPsychologist[activePsychologist].name}</div>
                 </div>
             </div>
             <div className='w-[330px] mx-auto' onClick={() => route.push('/profile')}>

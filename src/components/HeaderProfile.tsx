@@ -101,11 +101,11 @@ export default function HeaderProfile() {
                                 width={50} height={50} draggable='false' />
                             <div className='
                                 [@media(max-width:1279px)]:hidden'>
-                                <div className='text-left text-(--color-btn-and-title)
+                                <div className='text-left text-btn-and-title
                                         text-[20px] font-bold'>
                                     {FIO ? FIO.split(' ')[0] : session.data.user.name?.split(' ')[0] as string}
                                 </div>
-                                <div className='text-left text-(--text) text-[16px] font-medium'>
+                                <div className='text-left text-text text-[16px] font-medium'>
                                     {session.data?.user.role === 'psychologist' ?
                                         <span>Кабинет психолога</span> : <span>Личный кабинет</span>
                                     }
@@ -131,7 +131,7 @@ export default function HeaderProfile() {
                                 listProfile.map((obj: TListProfile, index: number) => {
                                     return (
                                         <Link href={obj.link}
-                                            className="cursor-pointer flex items-center gap-x-[20px] text-(--text)
+                                            className="cursor-pointer flex items-center gap-x-[20px] text-text
                                                 text-[18px] font-medium h-[40px]
                                                 hover:scale-105 transition-transform duration-300 group"
                                             onClick={obj.id == 6 ? () => clickSignOut() : obj.id === 5 ?
@@ -149,7 +149,7 @@ export default function HeaderProfile() {
                                 }) : listPsychologistProfile.map((obj: TListProfile, index: number) => {
                                     return (
                                         <Link href={obj.link}
-                                            className="cursor-pointer flex items-center gap-x-[20px] text-(--text)
+                                            className="cursor-pointer flex items-center gap-x-[20px] text-text
                                                 text-[18px] font-medium h-[40px]
                                                 hover:scale-105 transition-transform duration-300 group"
                                             onClick={obj.id == 6 ? () => clickSignOut() : obj.id === 5 ?
@@ -170,8 +170,8 @@ export default function HeaderProfile() {
                     }
                 </div> :
                 <Link href='/signIn'
-                    className='text-(--color-btn-and-title) font-semibold border-2 border-solid
-                                     border-(--color-btn-and-title) rounded-2xl w-60 h-[50px] leading-[50px]'>
+                    className='text-btn-and-title font-semibold border-2 border-solid
+                                     border-btn-and-title rounded-2xl w-60 h-[50px] leading-[50px]'>
                     Личный кабинет
                 </Link>
             }

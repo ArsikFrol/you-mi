@@ -77,8 +77,8 @@ export default function TariffsPsychologist(props: Props) {
                                 color: 'white'
                             } : {})
                         }}
-                        className='text-center border-2 rounded-[10px] border-(--color-btn-and-title)
-                            h-[40px] w-[220px] leading-[40px] px-[30px] text-[18px] text-(--color-btn-and-title)
+                        className='text-center border-2 rounded-[10px] border-btn-and-title
+                            h-[40px] w-[220px] leading-[40px] px-[30px] text-[18px] text-btn-and-title
                             hover:scale-105 transition-transform duration-300 cursor-pointer'>
                         Очно {listPsychologist[activePsychologist].tariffsWork.faceToFace} ₽
                     </div>
@@ -97,8 +97,8 @@ export default function TariffsPsychologist(props: Props) {
                                 color: 'white'
                             } : {})
                         }}
-                        className='text-center border-2 rounded-[10px] border-(--color-btn-and-title)
-                            h-[40px] w-[220px] leading-[40px] px-[30px] text-[18px] text-(--color-btn-and-title)
+                        className='text-center border-2 rounded-[10px] border-btn-and-title
+                            h-[40px] w-[220px] leading-[40px] px-[30px] text-[18px] text-btn-and-title
                             hover:scale-105 transition-transform duration-300 cursor-pointer'>
                         Онлайн {listPsychologist[activePsychologist].tariffsWork.online} ₽
                     </div>
@@ -118,8 +118,8 @@ export default function TariffsPsychologist(props: Props) {
                             color: 'white'
                         } : {})
                     }}
-                    className='text-center border-2 rounded-[10px] border-(--color-btn-and-title)
-                            h-[40px] w-[220px] leading-[40px] px-[30px] text-[18px] text-(--color-btn-and-title)
+                    className='text-center border-2 rounded-[10px] border-btn-and-title
+                            h-[40px] w-[220px] leading-[40px] px-[30px] text-[18px] text-btn-and-title
                             hover:scale-105 transition-transform duration-300 cursor-pointer'>
                     С семьей {listPsychologist[activePsychologist].tariffsWork.withFamilies} ₽
                 </div>

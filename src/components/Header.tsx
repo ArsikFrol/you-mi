@@ -60,7 +60,7 @@ export default function Header(props: Props) {
                <Image src={logo} alt='' width={170} height={44} loading="eager"/>
             </Link>
             {!props.showNav &&
-               <div className='relative flex text-(--text) font-semibold 
+               <div className='relative flex text-text font-semibold
                      xl:gap-[60px]
                      lg:gap-[40px]
                      max-lg:hidden'>
@@ -68,13 +68,13 @@ export default function Header(props: Props) {
                      listNav.map((obj: TListElem, index: number) => {
                         return (
                            <Link
-                              onClick={obj.id == 4 ? (e) => clickMaterials(e) : () => { }} 
+                              onClick={obj.id == 4 ? (e) => clickMaterials(e) : () => { }}
                               href={obj.link}
-                              className='leading-[50px] cursor-pointer 
-                                 flex items-center gap-x-[10px] relative text-[16px]' 
+                              className='leading-[50px] cursor-pointer
+                                 flex items-center gap-x-[10px] relative text-[16px]'
                               key={index}>
                                  {obj.text}
-                              <Image style={obj.id != 4 ? { display: 'none' } : {}} 
+                              <Image style={obj.id != 4 ? { display: 'none' } : {}}
                                  src={materialsArrow} alt=''
                                  width={12} height={6} draggable='false' />
                            </Link>
@@ -86,10 +86,10 @@ export default function Header(props: Props) {
                         className='absolute -right-[25px] top-[50px] flex flex-col py-[10px]
                                  shadow-[0_0_10px_rgba(0,0,0,0.2)] rounded-2xl z-10 bg-white'>
                         <Link href='/articles'
-                           className='w-[180px] text-center leading-[50px] hover:scale-115 
+                           className='w-[180px] text-center leading-[50px] hover:scale-115
                            transition-transform duration-100 cursor-pointer'>Статьи</Link>
                         <Link href='/webinars'
-                           className='w-[180px] text-center leading-[50px] hover:scale-115 
+                           className='w-[180px] text-center leading-[50px] hover:scale-115
                            transition-transform duration-100 cursor-pointer'>Вебинары</Link>
                      </div>
                   }

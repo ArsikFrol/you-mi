@@ -36,9 +36,6 @@
 
 @theme {
     --color-bg: rgba(249, 252, 255, 1);
-}
-
-:root {
-    --color-btn-and-title:rgba(140, 130, 210, 1); /* rgba(120, 114, 185, 1) */
-    --text: rgba(77, 77, 82, 1);
+    --color-text: rgba(77, 77, 82, 1);
+    --btn-and-title: rgba(140, 130, 210, 1);
 }

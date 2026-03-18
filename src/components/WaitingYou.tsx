@@ -20,8 +20,8 @@ export default function WaitingYou() {
                 <div className="bg-[rgba(235,245,255,1)] rounded-2xl py-7.5 px-12.5 flex gap-x-10 items-center mb-10">
                     <Image src={book} alt='' width={150} height={150} draggable='false' />
                     <div className="">
-                        <div className="text-(--text) text-[24px] font-semibold mb-3">Документы</div>
-                        <div className="text-(--text) text-[20px] w-185">подтверждающие дополнительное образование в определенном направлении психотерапии. Мы рассматриваем только длительные программы обучения, около 500 часов.</div>
+                        <div className="text-text text-[24px] font-semibold mb-3">Документы</div>
+                        <div className="text-text text-[20px] w-185">подтверждающие дополнительное образование в определенном направлении психотерапии. Мы рассматриваем только длительные программы обучения, около 500 часов.</div>
                     </div>
                 </div>
                 <div className='flex justify-between mb-10'>
@@ -41,8 +41,8 @@ export default function WaitingYou() {
                 <div className="bg-[rgba(235,245,255,1)] rounded-2xl py-7.5 px-12.5 flex gap-x-10 items-center mb-10">
                     <Image src={checkMark} alt='' width={150} height={150} draggable='false' />
                     <div className="">
-                        <div className="text-(--text) text-[24px] font-semibold mb-3">Подтвержденнный опыт работы</div>
-                        <div className="text-(--text) text-[20px] w-185">не менее 3-х лет. Учитывается только опыт консультирования за оплату и не в рамках учебной программы.</div>
+                        <div className="text-text text-[24px] font-semibold mb-3">Подтвержденнный опыт работы</div>
+                        <div className="text-text text-[20px] w-185">не менее 3-х лет. Учитывается только опыт консультирования за оплату и не в рамках учебной программы.</div>
                     </div>
                 </div>
             </>

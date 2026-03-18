@@ -97,8 +97,8 @@ export default function FormLayout({
                                                 obj.id === 4 && selectData ? '/payService?backPage=formPsychologists' : ''
                                 }
                                 style={{ width: `${obj.width}px` }}
-                                className={`block text-center h-[50px] leading-[50px] text-white text-[20px] 
-                                    font-semibold bg-(--color-btn-and-title) rounded-3xl transition-all 
+                                className={`block text-center h-[50px] leading-[50px] text-white text-[20px]
+                                    font-semibold bg-btn-and-title rounded-3xl transition-all
                                     duration-300 cursor-pointer hover:scale-105 ${isActive ? 'opacity-100' : 'opacity-30'}`}>
                                 {obj.text}
                             </Link>
@@ -115,8 +115,8 @@ export default function FormLayout({
                         { width: '230px' } : {}),
                     ...(pathName == '/formSelectionPsychologist/complete' ? { display: 'none' } : {})
                 }}>
-                <div onClick={clickBack} className='transition-transform hover:scale-105 
-                    duration-300 cursor-pointer w-[220px] border border-(--color-btn-and-title) h-[60px] leading-[60px] 
+                <div onClick={clickBack} className='transition-transform hover:scale-105
+                    duration-300 cursor-pointer w-[220px] border border-btn-and-title h-[60px] leading-[60px]
                     text-center rounded-2xl'
                     style={{
                         ...(pathName == '/formSelectionPsychologist/one' ? { display: 'none' } : {})
