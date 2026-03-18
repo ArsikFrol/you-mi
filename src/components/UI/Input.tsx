@@ -22,7 +22,7 @@ export default function Input(props: Props) {
     const [invalidChar, setInvalidChar] = React.useState<boolean>(false)
 
     const handleChange = (str: string) => {
-
+        props.onChange(str)
     }
 
     const borderClass = error
