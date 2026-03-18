@@ -37,5 +37,5 @@
 @theme {
     --color-bg: rgba(249, 252, 255, 1);
     --color-text: rgba(77, 77, 82, 1);
-    --btn-and-title: rgba(140, 130, 210, 1);
+    --color-btn-and-title: rgba(140, 130, 210, 1);
 }
