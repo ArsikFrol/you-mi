@@ -39,8 +39,6 @@ export default function AppearanceSettings(props: Props) {
     const [showLang, setShowLang] = React.useState<boolean>(false)
     const [activeLang, setActiveLang] = React.useState<TLanguage>(language)
 
-    console.log(language, activeLang)
-
     const clickTheme = () => {
         setTheme(theme === "light" ? "dark" : "light")
     }
