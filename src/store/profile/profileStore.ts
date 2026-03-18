@@ -71,7 +71,7 @@ const useProfile = create<IProfile>((set, get) => ({
     setNumberPhone: (newValue: string) => set({ numberPhone: newValue }),
     gender: '',
     setGender: (newValue: TGender) => set({ gender: newValue }),
-    language: '',
+    language: 'ru',
     setLanguage: (newValue: TLanguage) => set({ language: newValue }),
 
     referralPiple: 0,
