@@ -50,7 +50,7 @@ export default function PersonalDataSettings(props: Props) {
     return (
         <>
             <>
-                <div className='text-(--color-btn-and-title) font-extrabold text-[44px] mb-[50px]'>Личные данные</div>
+                <div className='text-(--color-btn-and-title) font-extrabold text-[44px] mb-[50px] text-center'>Личные данные</div>
                 <div className='w-[600px] mx-auto flex flex-col gap-y-[40px] h-[500px] overflow-y-scroll'>
                     <div className='text-left'>
                         <div className='text-[20px] mb-[10px]'>Имя</div>

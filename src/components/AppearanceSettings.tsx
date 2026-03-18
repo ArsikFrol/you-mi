@@ -61,10 +61,10 @@ export default function AppearanceSettings(props: Props) {
     return (
         <>
             <>
-                <div className='text-(--color-btn-and-title) font-extrabold text-[44px] mb-[50px]'>Внешний вид</div>
+                <div className='text-(--color-btn-and-title) font-extrabold text-[44px] mb-[50px] text-center'>Внешний вид</div>
                 <div className='w-[600px] mx-auto gap-y-[40px] grid grid-cols-2 h-[500px] overflow-y-scroll'>
                     <div className=''>
-                        <div className='text-[20px] mb-[10px]'>Язык на странице</div>
+                        <div className='text-[20px] mb-[10px] text-center'>Язык на странице</div>
                         <div className='flex items-center gap-x-[10px] w-[200px] mx-auto relative'>
                             <div className='bg-[rgba(74,70,117,0.2)] rounded-2xl w-[150px] text-center
                                 text-[18px] leading-[40px]'>{activeLang === 'ru' ? 'Рус.' : 'Англ.'}</div>
@@ -78,7 +78,7 @@ export default function AppearanceSettings(props: Props) {
                                     {
                                         listLang.map((obj, index: number) => {
                                             return(
-                                                <div className={`cursor-pointer text-(--text)
+                                                <div className={`cursor-pointer text-(--text) text-center
                                                     text-[18px] font-medium h-[40px] w-[100px] leading-[40px]
                                                     hover:scale-105 transition-transform duration-300 group
                                                     ${activeLang === obj.type ?
@@ -95,7 +95,7 @@ export default function AppearanceSettings(props: Props) {
                         </div>
                     </div>
                     <div className=''>
-                        <div className='text-[20px] mb-[10px]'>Тема страницы</div>
+                        <div className='text-[20px] mb-[10px] text-center'>Тема страницы</div>
                         <div className='flex items-center gap-x-[10px] w-[200px] mx-auto'>
                             <div className='bg-[rgba(74,70,117,0.2)] rounded-2xl w-[150px] text-center
                                 text-[18px] leading-[40px]'>{theme === 'light' ? 'Светлая' : 'Темная'}</div>
