@@ -76,7 +76,8 @@ export default function FourStepsForMeeting() {
                         listElem.map((obj: TElem, index: number) => {
                             return (
                                 <motion.div key={index}
-                                    initial={{ x: obj.id === 1 || obj.id === 3 ? -100 : obj.id === 2 || obj.id === 4 ? 100 : 0, opacity: 0 }}
+                                    initial={{ x: obj.id === 1 || obj.id === 3 ? -50 :
+                                        obj.id === 2 || obj.id === 4 ? 50 : 0, opacity: 0 }}
                                     whileInView={{ x: 0, opacity: 1 }}
                                     viewport={{ once: false, amount: 0.5 }}
                                     transition={{ duration: 0.7, type: "spring", stiffness: 50 }}
@@ -122,7 +123,7 @@ export default function FourStepsForMeeting() {
                 </div>
                 <div className="flex justify-between items-center">
                     <motion.div
-                        initial={{ x: -100, opacity: 0 }}
+                        initial={{ x: -50, opacity: 0 }}
                         whileInView={{ x: 0, opacity: 1 }}
                         viewport={{ once: false, amount: 0.5 }}
                         transition={{ duration: 0.7, type: "spring", stiffness: 50 }}
@@ -142,7 +143,7 @@ export default function FourStepsForMeeting() {
                         </div>
                     </motion.div>
                     <motion.div
-                        initial={{ x: 100, opacity: 0 }}
+                        initial={{ x: 50, opacity: 0 }}
                         whileInView={{ x: 0, opacity: 1 }}
                         viewport={{ once: false, amount: 0.5 }}
                         transition={{ duration: 0.7, type: "spring", stiffness: 50 }}

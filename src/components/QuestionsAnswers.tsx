@@ -35,15 +35,14 @@ export default function QuestionsAnswers() {
                     {
                         ListElem.map((obj: { id: number, desc: string, title: string }, index: number) => {
                             return (
-                                <motion.div
-                                    initial={{ y: -100, opacity: 0 }}
+                                <motion.div key={index}
+                                    initial={{ y: -50, opacity: 0 }}
                                     whileInView={{ x: 0, opacity: 1 }}
                                     viewport={{ once: false, amount: 0.5 }}
                                     transition={{ duration: 0.7, type: "spring", stiffness: 50 }}
                                     className="group hover:scale-105 transition-transform duration-300
                                     cursor-pointer relative bg-blue-50 p-[50px] rounded-2xl"
-                                    onClick={() => clickShowElem(obj.id)}
-                                    key={index}>
+                                    onClick={() => clickShowElem(obj.id)} >
                                     <div className='flex justify-between items-start gap-x-[20px]'>
                                         <div className="mb-2.5 text-text text-[20px] font-semibold">
                                             {obj.title}

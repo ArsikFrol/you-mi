@@ -11,7 +11,6 @@ export default function EducationTherapy() {
         <div className="flex flex-col gap-y-5 my-[100px]">
             <div className="flex items-center
                 lg:gap-x-[50px]
-
                 sm:gap-x-[10px]">
                 <motion.div
                     initial={{ x: -100, y: -100, opacity: 0 }}

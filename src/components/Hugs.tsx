@@ -17,7 +17,7 @@ export default function Hugs() {
         <Container relative purple>
             <div className='flex justify-between items-center'>
                 <motion.div
-                    initial={{ x: -200, opacity: 0 }}
+                    initial={{ x: -50, opacity: 0 }}
                     whileInView={{ x: 0, opacity: 1 }}
                     viewport={{ once: false, amount: 0.5 }}
                     transition={{ duration: 0.7, type: "spring", stiffness: 50 }}
@@ -48,7 +48,7 @@ export default function Hugs() {
                     </div>
                 </motion.div>
                 <motion.div
-                    initial={{ x: 200, opacity: 0 }}
+                    initial={{ x: 50, opacity: 0 }}
                     whileInView={{ x: 0, opacity: 1 }}
                     viewport={{ once: false, amount: 0.5 }}
                     transition={{ duration: 0.7, type: "spring", stiffness: 50 }}

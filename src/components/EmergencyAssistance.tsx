@@ -2,13 +2,25 @@ import Image from "next/image"
 
 import specialist from '../../public/specialist.png'
 
-const listElemLeft = [
+type TListElemLeft = {
+    id: number
+    tel: string
+    desc: string
+}
+
+type TListElemRight = {
+    id: number
+    tel: string
+    desc: string
+}
+
+const listElemLeft: Array<TListElemLeft> = [
     { id: 1, tel: '+7 495 989 50 50', desc: 'Центр экстренной психологической помощи МЧС России' },
     { id: 2, tel: '8 800 333 44 34', desc: 'Бесплатная кризисная линия доверия' },
     { id: 3, tel: '8 800 2000 122', desc: 'Всероссийская служба детского телефона доверия' }
 ]
 
-const listElemRight = [
+const listElemRight: Array<TListElemRight> = [
     { id: 1, tel: '+7 499 173 09 09', desc: 'Московская служба психологической помощи населению' },
     { id: 2, tel: '8 800 700 06 00', desc: 'Всероссийский телефон доверия для женщин, пострадавших от домашнего насилия' }
 ]
@@ -26,7 +38,7 @@ export default function EmergencyAssistance() {
             <div className="mb-5 text-btn-and-title font-extrabold
                 md:text-[40px]
                 max-md:text-[35px]">Экстренная помощь</div>
-            <div className="mb-7.5 text-text
+            <div className="mb-[30px] text-text
                 xl:w-[780px]
                 max-xl:md:w-[550px]
                 md:text-[20px] max-md:text-[18px]">Если вам необходима
@@ -36,9 +48,9 @@ export default function EmergencyAssistance() {
             <div className="mt-[50px] flex
                 xl:justify-between
                 max-xl:flex-col max-xl:gap-y-[30px]">
-                <div className="flex flex-col gap-y-[20px]  w-[450px]">
+                <div className="flex flex-col gap-y-[20px] w-[450px]">
                     {
-                        listElemLeft.map((obj: { id: number, tel: string, desc: string }, index: number) => {
+                        listElemLeft.map((obj, index: number) => {
                             return (
                                 <div className="text-text flex flex-col gap-y-[5px]" key={index}>
                                     <div className="font-semibold
@@ -50,9 +62,9 @@ export default function EmergencyAssistance() {
                         })
                     }
                 </div>
-                <div className="flex flex-col gap-y-5  w-112.5">
+                <div className="flex flex-col gap-y-[20px]  w-[450px]">
                     {
-                        listElemRight.map((obj: { id: number, tel: string, desc: string }, index: number) => {
+                        listElemRight.map((obj, index: number) => {
                             return (
                                 <div className="text-text flex flex-col gap-y-[5px]" key={index}>
                                     <div className="font-semibold
@@ -66,7 +78,7 @@ export default function EmergencyAssistance() {
                 </div>
             </div>
             <Image  src={specialist} alt='' width={240} height={240} draggable='false'
-                className="absolute right-25 -top-12.5
+                className="absolute right-[100px] top-[-50px]
                     max-lg:hidden" />
         </div>
     )

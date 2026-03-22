@@ -36,7 +36,7 @@ const getAnimationProps = (id: number) => {
     switch (id) {
         case 1:
             return {
-                initial: { x: -200, opacity: 0 },
+                initial: { x: -50, opacity: 0 },
                 whileInView: { x: 0, opacity: 1 },
                 viewport: { once: false, amount: 0.5 }
             }
@@ -48,7 +48,7 @@ const getAnimationProps = (id: number) => {
             }
         case 3:
             return {
-                initial: { x: 200, opacity: 0 },
+                initial: { x: 50, opacity: 0 },
                 whileInView: { x: 0, opacity: 1 },
                 viewport: { once: false, amount: 0.5 }
             }
