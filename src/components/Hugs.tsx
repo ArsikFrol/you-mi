@@ -30,13 +30,9 @@ export default function Hugs() {
                     </div>
                     <div className="mb-[70px] text-text font-semibold
                         xl:w-[420px]
-                        max-sm:w-[295px]
-                        max-lg:mx-auto
-                        max-lg:text-center
-                        xl:text-[40px]
+                        xl:text-[40px] max-lg:mx-auto max-lg:text-center
                         md:text-[35px]
-                        sm:text-[30px]
-                        max-sm:text-[30px]">
+                        sm:text-[30px] max-sm:text-[30px] max-sm:w-[295px]">
                         Найдите своего психолога онлайн
                     </div>
                     <div className='w-[390px]
@@ -46,7 +42,7 @@ export default function Hugs() {
                             widht={width && width >= 640 ?  380 : 290}
                             textBtn="Найти психолога"/>
                     </div>
-                    <div className="mt-[30px] text-[20px] font-semibold text-text
+                    <div className="mt-[30px] text-[20px] text-text
                         max-lg:text-center">
                         2770 руб. за 50 минут сессии
                     </div>
